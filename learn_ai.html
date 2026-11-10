@@ -231,56 +231,6 @@ document.addEventListener('keydown', function(e) {
   }
 });
 </script>
-<script>
-    function openDestinationModal(title, eyebrow, description, lessons) {
-      document.getElementById('modal-path-title').textContent = title;
-      document.getElementById('modal-path-eyebrow').textContent = eyebrow;
-      document.getElementById('modal-path-desc').textContent = description;
-      
-      const listEl = document.getElementById('modal-lessons-list');
-      listEl.innerHTML = '';
-      if (lessons && lessons.length) {
-        lessons.forEach((lesson, index) => {
-          const li = document.createElement('li');
-          li.className = 'flex items-center gap-2 py-1 border-b border-[#E8EAE6]/60 last:border-0';
-          li.innerHTML = `<span class="w-5 h-5 rounded-full bg-[#176B50]/10 text-[#176B50] font-label-sm text-[11px] font-bold flex items-center justify-center shrink-0">${index + 1}</span><span class="text-[#17231D]">${lesson}</span>`;
-          listEl.appendChild(li);
-        });
-      }
-      
-      document.getElementById('destination-modal').classList.remove('hidden');
-      document.body.style.overflow = 'hidden';
-    }
 
-    function closeDestinationModal() {
-      document.getElementById('destination-modal').classList.add('hidden');
-      document.body.style.overflow = '';
-    }
-
-    function startPathway() {
-      const title = document.getElementById('modal-path-title').textContent;
-      closeDestinationModal();
-      showToast('Opening module: ' + title);
-    }
-
-    function showToast(message) {
-      const toast = document.getElementById('toast');
-      const toastText = document.getElementById('toast-text');
-      toastText.textContent = message;
-      toast.classList.remove('translate-y-20', 'opacity-0');
-      toast.classList.add('translate-y-0', 'opacity-100');
-      
-      setTimeout(() => {
-        toast.classList.remove('translate-y-0', 'opacity-100');
-        toast.classList.add('translate-y-20', 'opacity-0');
-      }, 3200);
-    }
-
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        closeDestinationModal();
-      }
-    });
-  </script>
 </main><footer class="w-full bg-[#172D26] text-[#E8EAE6] border-t border-[#233F36]"><div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin pt-space-3xl pb-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter lg:gap-space-xl pb-space-2xl border-b border-[#2B493E]"><div class="lg:col-span-4 flex flex-col items-start"><div class="flex items-center gap-space-sm mb-space-md"><div class="w-9 h-9 rounded-lg bg-[#176B50] text-[#FFFFFF] flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">auto_awesome</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-[#FFFFFF] font-bold">AI Mitra</span><span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-wider">Explore AI Together</span></div></div><p class="font-body-sm text-body-sm text-secondary-fixed-dim max-w-sm mb-space-lg leading-relaxed">An Indian student-led civic technology initiative bringing critical, accessible, and rigorous artificial intelligence literacy to curious citizens, researchers, and schools nationwide.</p><div class="flex items-center gap-space-sm"><a aria-label="Curriculum Repository" class="w-9 h-9 rounded-lg border border-[#34584C] flex items-center justify-center text-secondary-fixed hover:bg-[#176B50] hover:text-[#FFFFFF] transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">code</span></a><a aria-label="Academic Dispatches" class="w-9 h-9 rounded-lg border border-[#34584C] flex items-center justify-center text-secondary-fixed hover:bg-[#176B50] hover:text-[#FFFFFF] transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">rss_feed</span></a><a aria-label="Community Exchange" class="w-9 h-9 rounded-lg border border-[#34584C] flex items-center justify-center text-secondary-fixed hover:bg-[#176B50] hover:text-[#FFFFFF] transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">forum</span></a><a aria-label="Institutional Enquiries" class="w-9 h-9 rounded-lg border border-[#34584C] flex items-center justify-center text-secondary-fixed hover:bg-[#176B50] hover:text-[#FFFFFF] transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">mail</span></a></div></div><div class="lg:col-span-3 flex flex-col"><span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider mb-space-md font-semibold">Learning Pathways</span><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm"><li class="border-b border-[#233F36] pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors flex items-center justify-between" href="#"><span class="">Foundational Machine Learning</span><span class="font-label-sm text-[11px] text-secondary-fixed-dim">01</span></a></li><li class="border-b border-[#233F36] pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors flex items-center justify-between" href="#"><span class="">Neural Networks Demystified</span><span class="font-label-sm text-[11px] text-secondary-fixed-dim">02</span></a></li><li class="border-b border-[#233F36] pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors flex items-center justify-between" href="#"><span class="">Large Language Models &amp; India</span><span class="font-label-sm text-[11px] text-secondary-fixed-dim">03</span></a></li><li class="border-b border-[#233F36] pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors flex items-center justify-between" href="#"><span class="">Algorithmic Fairness Lab</span><span class="font-label-sm text-[11px] text-secondary-fixed-dim">04</span></a></li></ul></div><div class="lg:col-span-3 flex flex-col"><span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider mb-space-md font-semibold">Civic Initiatives</span><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm"><li class="border-b border-[#233F36] pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors flex items-center justify-between" href="#"><span class="">Agriculture &amp; Rural Deployment</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span></a></li><li class="border-b border-[#233F36] pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors flex items-center justify-between" href="#"><span class="">Healthcare Diagnostic Case Studies</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span></a></li><li class="border-b border-[#233F36] pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors flex items-center justify-between" href="#"><span class="">Ethics, Bias &amp; Public Governance</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span></a></li><li class="border-b border-[#233F36] pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors flex items-center justify-between" href="#"><span class="">Open Curriculum Repository</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span></a></li></ul></div><div class="lg:col-span-2 flex flex-col"><span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider mb-space-md font-semibold">About Initiative</span><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-secondary-fixed-dim"><li class="pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors" href="#">Editorial Charter</a></li><li class="pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors" href="#">Student Fellowship</a></li><li class="pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors" href="#">Partnering Classrooms</a></li><li class="pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors" href="#">Open Source Code</a></li></ul></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-secondary-fixed-dim"><p class="text-center sm:text-left">© 2025 AI Mitra Initiative. Student-led, non-profit, published under Creative Commons BY-NC 4.0.</p><div class="flex items-center gap-space-lg font-label-sm text-label-sm"><a class="hover:text-[#FFFFFF] transition-colors" href="#">Privacy Framework</a><a class="hover:text-[#FFFFFF] transition-colors" href="#">Research Ethics</a><a class="hover:text-[#FFFFFF] transition-colors" href="#">Classroom Kit</a></div></div></div></footer>
 <script src="js/site-config.js"></script><script src="js/site-navigation.js"></script></body></html>
