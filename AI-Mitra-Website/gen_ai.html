@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-container": "#176b50", "on-tertiary-fixed-variant": "#753400", "tertiary": "#753400", "primary-fixed": "#a4f3d0", "on-primary": "#ffffff", "on-secondary-fixed-variant": "#354b43", "surface-variant": "#d8e6dc", "inverse-on-surface": "#e6f4ea", "primary": "#00513b", "secondary": "#4c635b", "error": "#ba1a1a", "on-tertiary-container": "#ffcfb5", "secondary-container": "#cce5da", "surface-dim": "#cfddd4", "tertiary-fixed-dim": "#ffb68c", "error-container": "#ffdad6", "secondary-fixed": "#cfe8dd", "tertiary-fixed": "#ffdbc9", "on-background": "#121e18", "on-secondary": "#ffffff", "surface-container": "#e3f1e7", "on-surface-variant": "#3f4944", "on-tertiary": "#ffffff", "surface-tint": "#176b50", "surface-container-high": "#ddece2", "surface-bright": "#effdf3", "on-surface": "#121e18", "inverse-primary": "#89d6b5", "outline-variant": "bec9c2", "surface-container-highest": "#d8e6dc", "surface-container-low": "#e9f7ed", "inverse-surface": "#27332d", "secondary-fixed-dim": "#b3ccc2", "on-primary-fixed-variant": "#00513b", "on-primary-fixed": "#002116", "on-primary-container": "#9be9c6", "on-error": "#ffffff", "on-secondary-fixed": "#091f19", "surface-container-lowest": "#ffffff", "on-error-container": "#93000a", "background": "#effdf3", "surface": "#effdf3", "tertiary-container": "#994703", "outline": "#6f7973", "on-secondary-container": "#50675f", "primary-fixed-dim": "#89d6b5", "on-tertiary-fixed": "#321200" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-tablet": "2rem", "gutter": "1.5rem", "space-2xl": "4rem", "space-3xl": "6rem", "space-sm": "0.5rem", "margin": "3rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-mobile": "1rem", "space-xl": "2.5rem", "margin-mobile": "1.25rem" }, "fontFamily": { "headline-sm": [ "Plus Jakarta Sans" ], "label-sm": [ "DM Sans" ], "body-lg": [ "Inter" ], "body-sm": [ "Inter" ], "headline-md": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Plus Jakarta Sans" ], "display-mobile": [ "Plus Jakarta Sans" ], "headline-lg": [ "Plus Jakarta Sans" ], "label-md": [ "DM Sans" ], "label-lg": [ "DM Sans" ], "display": [ "Plus Jakarta Sans" ], "body-md": [ "Inter" ] }, "fontSize": { "headline-sm": [ "1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-sm": [ "0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.875rem", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "body-sm": [ "0.875rem", { "lineHeight": "1.375rem", "letterSpacing": "0", "fontWeight": "400" } ], "headline-md": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-lg-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "display-mobile": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "700" } ], "headline-lg": [ "2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "label-md": [ "0.8125rem", { "lineHeight": "1rem", "letterSpacing": "0.03em", "fontWeight": "600" } ], "label-lg": [ "0.9375rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "500" } ], "display": [ "3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "body-md": [ "1rem", { "lineHeight": "1.625rem", "letterSpacing": "0", "fontWeight": "400" } ] } } } };</script><link href="css/site-navigation.css" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="aimitra-site-header">
+<div class="aimitra-header-inner">
+<a aria-label="AI Mitra home" class="aimitra-brand" href="index.html">
+<span aria-hidden="true" class="aimitra-brand-mark">
+<svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 3V21M3 12H21" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path>
+<circle cx="12" cy="12" fill="currentColor" r="3"></circle>
+<circle cx="6" cy="6" fill="currentColor" r="1.5"></circle>
+<circle cx="18" cy="18" fill="currentColor" r="1.5"></circle>
+</svg>
+</span>
+<span class="aimitra-brand-copy">
+<strong>AI Mitra</strong>
+<small>Explore AI Together</small>
+</span>
+</a>
+<nav aria-label="Main navigation" class="aimitra-nav-links">
+<a href="index.html">Home</a>
+<a href="learn_ai.html">Learn AI</a>
+<a href="ai_in_real_life.html">AI in Real Life</a>
+<a href="resource.html">Resources</a>
+<a href="about.html">About</a>
+</nav>
+<div class="aimitra-nav-actions">
+<a class="aimitra-start-learning" href="learn_ai.html">Start Learning</a>
+<button aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation" class="aimitra-menu-toggle" id="mobileMenuBtn" type="button">
+<svg aria-hidden="true" class="aimitra-menu-open" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-width="2"></path></svg>
+<svg aria-hidden="true" class="aimitra-menu-close" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+<div class="aimitra-mobile-menu" hidden="" id="mobileMenu">
+<nav aria-label="Mobile navigation">
+<a href="index.html">Home</a>
+<a href="learn_ai.html">Learn AI</a>
+<a href="ai_in_real_life.html">AI in Real Life</a>
+<a href="resource.html">Resources</a>
+<a href="about.html">About</a>
+<a class="aimitra-mobile-start" href="learn_ai.html">Start Learning</a>
+</nav>
+</div>
+</header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Global Context & Curriculum Masthead -->
+<section class="w-full bg-surface-container-low border-b border-surface-dim/40 py-space-xl">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<!-- Breadcrumb Navigation -->
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md mb-space-md">
+<a class="flex items-center gap-1 hover:text-primary transition-colors" href="learn_ai.html">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span class="">Curriculum Hub</span>
+</a>
+<span class="text-outline">/</span>
+<span class="text-secondary font-medium">Pathways</span>
+<span class="text-outline">/</span>
+<span class="text-primary font-semibold">Path 03: Generative AI</span>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="bg-primary-container text-on-primary font-label-sm text-label-sm uppercase px-space-sm py-1 rounded">
+              Path 03 · Creative Synthesis &amp; Transformers
+            </span>
+<span class="bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm px-space-sm py-1 rounded">
+              Civic Curriculum · Class 8–10+ · Updated 2025
+            </span>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-space-sm py-1 rounded">
+              Medium: English + తెలుగు (Bilingual Edition)
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">
+            AI Mitra — Generative AI Learning Module
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+            Explore how Artificial Intelligence creates text, images, and speech. Discover the foundational science behind chatbots and learn why AI-synthesized information always requires critical human verification.
+          </p>
+</div>
+<!-- Metric Card / Quick Summary -->
+<div class="lg:col-span-4 bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Course Progress</span>
+<span class="font-label-lg text-label-lg font-bold text-primary" id="progress-text">Lesson 1 of 6</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden">
+<div class="h-full bg-primary-container transition-all duration-500 ease-out" id="progress-bar-fill" style="width: 17%;"></div>
+</div>
+<div class="flex items-center justify-between text-secondary font-label-sm text-label-sm pt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">auto_stories</span> 6 Detailed Lessons
+            </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span> Zero Quizzes · 100% Reading
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mobile Lesson Selector Bar (Sticky beneath header on mobile) -->
+<div class="lg:hidden sticky top-20 z-40 bg-surface-container-lowest border-b border-surface-dim/40 px-margin-mobile py-space-sm shadow-sm">
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1" for="mobile-lesson-select">
+      Jump to Lesson
+    </label>
+<select class="w-full bg-surface-container-low text-on-surface font-label-md text-label-md py-2 px-3 rounded-lg border-0 focus:ring-2 focus:ring-primary outline-none" id="mobile-lesson-select">
+<option value="1">01. What is Generative AI? (Text, Images &amp; Responsible Creation)</option>
+<option value="2">02. What are Large Language Models? (Tokens &amp; Representations)</option>
+<option value="3">03. How Does ChatGPT Work? (Prompts &amp; Next-Token Prediction)</option>
+<option value="4">04. How AI Generates Images (Diffusion: Noise to Picture)</option>
+<option value="5">05. AI Audio &amp; Speech Synthesis (TTS, STT &amp; Authenticity)</option>
+<option value="6">06. Hallucinations &amp; Fact-Checking (Critical Verification)</option>
+</select>
+</div>
+<!-- Main Body Grid: Sidebar + Scrollable Viewport -->
+<div class="w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Sticky Desk Syllabus (desktop only) -->
+<aside class="hidden lg:block lg:col-span-4 sticky top-24 space-y-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm border-b border-surface-dim/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">menu_book</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Curriculum Index</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded">6 Modules</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Self-paced conceptual handbook for middle &amp; high school learners. Read consecutively or revisit specific architecture topics.
+          </p>
+<nav class="flex flex-col space-y-2" id="sidebar-nav">
+<!-- Item 1 -->
+<button class="nav-lesson-btn w-full text-left p-space-sm rounded-lg transition-all flex items-start gap-space-sm bg-surface-container text-on-surface font-semibold shadow-xs border-l-4 border-primary" id="nav-btn-1" onclick="loadLesson(1)" type="button">
+<span class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md shrink-0 mt-0.5">01</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface leading-tight">What is Generative AI?</span>
+<span class="font-label-sm text-label-sm text-secondary truncate mt-0.5">Foundations &amp; Responsible Creation</span>
+</div>
+</button>
+<!-- Item 2 -->
+<button class="nav-lesson-btn w-full text-left p-space-sm rounded-lg transition-all flex items-start gap-space-sm hover:bg-surface-container-low text-on-surface-variant" id="nav-btn-2" onclick="loadLesson(2)" type="button">
+<span class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-md text-label-md shrink-0 mt-0.5">02</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md leading-tight">What are LLMs?</span>
+<span class="font-label-sm text-label-sm text-secondary truncate mt-0.5">Tokens &amp; Mathematical Representations</span>
+</div>
+</button>
+<!-- Item 3 -->
+<button class="nav-lesson-btn w-full text-left p-space-sm rounded-lg transition-all flex items-start gap-space-sm hover:bg-surface-container-low text-on-surface-variant" id="nav-btn-3" onclick="loadLesson(3)" type="button">
+<span class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-md text-label-md shrink-0 mt-0.5">03</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md leading-tight">How Does ChatGPT Work?</span>
+<span class="font-label-sm text-label-sm text-secondary truncate mt-0.5">Prompts &amp; Next-Token Prediction</span>
+</div>
+</button>
+<!-- Item 4 -->
+<button class="nav-lesson-btn w-full text-left p-space-sm rounded-lg transition-all flex items-start gap-space-sm hover:bg-surface-container-low text-on-surface-variant" id="nav-btn-4" onclick="loadLesson(4)" type="button">
+<span class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-md text-label-md shrink-0 mt-0.5">04</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md leading-tight">How AI Generates Images</span>
+<span class="font-label-sm text-label-sm text-secondary truncate mt-0.5">Diffusion: Noise to Picture</span>
+</div>
+</button>
+<!-- Item 5 -->
+<button class="nav-lesson-btn w-full text-left p-space-sm rounded-lg transition-all flex items-start gap-space-sm hover:bg-surface-container-low text-on-surface-variant" id="nav-btn-5" onclick="loadLesson(5)" type="button">
+<span class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-md text-label-md shrink-0 mt-0.5">05</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md leading-tight">AI Audio &amp; Speech</span>
+<span class="font-label-sm text-label-sm text-secondary truncate mt-0.5">TTS, STT &amp; Voice Authenticity</span>
+</div>
+</button>
+<!-- Item 6 -->
+<button class="nav-lesson-btn w-full text-left p-space-sm rounded-lg transition-all flex items-start gap-space-sm hover:bg-surface-container-low text-on-surface-variant" id="nav-btn-6" onclick="loadLesson(6)" type="button">
+<span class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-md text-label-md shrink-0 mt-0.5">06</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md leading-tight">Hallucinations &amp; Verification</span>
+<span class="font-label-sm text-label-sm text-secondary truncate mt-0.5">Fact-Checking &amp; Civic Ethics</span>
+</div>
+</button>
+</nav>
+<!-- Civic Learning Assurance Note -->
+<div class="mt-space-lg p-space-sm rounded-lg bg-surface-container-low flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">policy</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Curated by educator-scholars to promote scientific temper, critical digital literacy, and algorithmic accountability.
+            </p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm text-center">
+<p class="font-label-sm text-label-sm text-secondary mb-2 uppercase tracking-wider">Completed this Pathway?</p>
+<a class="inline-flex items-center justify-center w-full py-2 px-4 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold transition-colors" href="learn_ai.html">
+            Return to Learning Pathways
+          </a>
+</div>
+</aside>
+<!-- Right Column: Interactive Lesson Viewport (Natural Flow Scrolling) -->
+<main class="lg:col-span-8 flex flex-col gap-space-xl min-w-0" id="lesson-viewport" style="transition: opacity 200ms; opacity: 1;">
+<!-- Lesson Header -->
+<div class="flex flex-col gap-space-xs pb-space-sm border-b border-surface-dim/40">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Lesson 01</span>
+<span class="text-outline">·</span>
+<span class="font-label-sm text-label-sm text-secondary">Class 8–10 Foundations · Estimated reading time: 6 mins</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">What is Generative AI?</h2>
+<p class="font-body-md text-body-md text-secondary">Text, Images &amp; Responsible Creation</p>
+</div>
+<!-- Section 1: What Will You Learn in This Lesson? -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">lightbulb</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">What Will You Learn in This Lesson?</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-xs flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">category</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Recognizing Synthesis</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Understand that Generative AI produces brand-new content (text, imagery, voice) instead of just filtering pre-existing data.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-xs flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Pattern Math vs Real Mind</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Learn why machines do not possess consciousness, opinions, or human memories—they calculate statistical probabilities.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-xs flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Multi-Modal Applications</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Identify the practical spectrum: from writing student essays and summarizing science notes to rendering digital illustrations.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-xs flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">shield_person</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Civic Responsibility</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Recognize that human students remain 100% accountable for the originality and truth of work co-created with AI.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: 1. Simple English Explanation -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-xs flex flex-col gap-space-md">
+<div class="flex items-center gap-2 pb-2 border-b border-surface-dim/30">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">1</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Simple English Explanation</h3>
+</div>
+<div class="space-y-space-md font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<p class="">Imagine an enthusiastic classmate who has spent years reading tens of millions of textbooks, poems, and encyclopedias. When you ask this friend to write an invitation for a school science fair, they do not copy-paste an old pamphlet from their bag. Instead, they synthesize fresh sentences word by word, drawing on patterns they observed across millions of other good invitations.</p><p class="">Generative AI works on this exact principle of mathematical synthesis. Traditional software works like a calculator or a library filing cabinet: it looks up stored files or executes fixed rules. Generative AI is different. It is trained on giant collections of human cultural knowledge to generate entirely new combinations of words, artwork, or synthesized audio that never existed before.</p><p class="">However, remember this vital truth: the AI has no thoughts, feelings, or real-life understanding of what it says. When it creates a poem about the monsoon rains over the Western Ghats, it has never felt a raindrop or smelled the wet earth; it simply knows which poetic words frequently occur together in beautiful literature.</p>
+</div>
+</section>
+<!-- Section 3: 2. తెలుగు వివరణ (Bilingual Explanation) -->
+<section class="bg-surface-container-low p-space-lg rounded-xl shadow-xs flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-surface-dim/40">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">2</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">తెలుగు వివరణ (Bilingual Explanation)</h3>
+</div>
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-2.5 py-1 rounded">
+          ప్రాంతీయ భాషా మాధ్యమం
+        </span>
+</div>
+<div class="space-y-space-md font-body-md text-body-md text-on-surface leading-relaxed">
+<p class="">జనరేటివ్ ఆర్టిఫిషియల్ ఇంటెలిజెన్స్ (Generative AI) అంటే ఏమిటి?
+సాధారణ కంప్యూటర్ ప్రోగ్రామ్‌లు కేవలం మనం ఇచ్చిన ఆదేశాలను లేదా ముందుగా దాచిన ఫైళ్లను వెతికి చూపిస్తాయి. కానీ జెనరేటివ్ AI సరికొత్త వాక్యాలను, అందమైన చిత్రాలను మరియు శబ్దాలను సరికొత్తగా సృష్టించగలదు.</p><p class="">లక్షలాది పుస్తకాలు, వ్యాసాలు చదివిన ఒక తెలివైన విద్యార్థిలాగా ఇది పనిచేస్తుంది. మీరు ఒక కథ రాయమని అడిగితే, అది ఎక్కడినుంచో కాపీ చేయదు; గతంలో చూసిన లక్షలాది రచనల శైలి ఆధారంగా సరికొత్త పదాలను కూర్చి కొత్త కథను తయారు చేస్తుంది.</p><p class="">ముఖ్య గమనిక: AI కి స్వంత ఆలోచనలు, భావోద్వేగాలు లేదా స్పృహ ఉండవు. వర్షం గురించి అది అందమైన కవిత రాయగలదు, కానీ వర్షపు చల్లదనాన్ని అది ఎన్నడూ అనుభవించలేదు. అది కేవలం పదాల మధ్య ఉండే గణిత సంబంధాలను లెక్కించి మనకు అందిస్తుంది.</p>
+</div>
+</section>
+<!-- Section 4: 3. Everyday-Life Real Example -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-xs flex flex-col gap-space-md">
+<div class="flex items-center gap-2 pb-2 border-b border-surface-dim/30">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">3</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Everyday-Life Real Example</h3>
+</div>
+<div class="flex flex-col gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">The School Rocketry Club Announcement</span>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Arjun, a 9th-grade student from Warangal, needs to design a bilingual poster and invitation for his school's ISRO Chandrayaan commemoration exhibit. Instead of starting with a blank sheet, he types into a generative AI tool: 'Draft an enthusiastic 4-sentence invitation for middle school students to join a model rocketry workshop, highlighting curiosity and teamwork.' Within 3 seconds, the software generates three fresh variations. Arjun reviews them, selects the most respectful draft, corrects a factual timeline about launch dates, and translates key scientific phrases into Telugu for his school notice board. Generative AI provided the starter framework, but Arjun exercised human judgment and local accuracy.
+        </p>
+<div class="mt-space-xs p-space-sm rounded-lg bg-surface-container flex items-center gap-space-sm text-primary">
+<span class="material-symbols-outlined text-[20px] shrink-0">tips_and_updates</span>
+<span class="font-label-md text-label-md font-semibold">AI served as a creative spark, but the human student retained editorial control.</span>
+</div>
+</div>
+</section>
+<!-- Section 5: 4. Architectural Diagram -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-xs flex flex-col gap-space-md">
+<div class="flex items-center gap-2 pb-2 border-b border-surface-dim/30">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">4</span>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Architectural Visual Diagram</h3>
+<span class="font-label-sm text-label-sm text-secondary">Educational Flow: User Intent to Multi-Modal Synthesis</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-low p-space-md rounded-lg overflow-x-auto">
+<svg class="w-full h-auto text-on-surface" viewbox="0 0 760 220" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#e3f1e7" height="80" rx="8" stroke="#00513b" stroke-width="2" width="160" x="10" y="70"></rect>
+<text fill="#00513b" font-family="Plus Jakarta Sans" font-size="14" font-weight="bold" text-anchor="middle" x="90" y="105">User Prompt</text>
+<text fill="#3f4944" font-family="Inter" font-size="11" text-anchor="middle" x="90" y="125">"Explain photosynthesis"</text>
+<path d="M 170 110 L 230 110" marker-end="url(#arrow)" stroke="#00513b" stroke-width="2"></path>
+<rect fill="#176b50" height="130" rx="8" stroke="#00513b" stroke-width="2" width="220" x="230" y="45"></rect>
+<text fill="#ffffff" font-family="Plus Jakarta Sans" font-size="15" font-weight="bold" text-anchor="middle" x="340" y="85">Generative AI Engine</text>
+<text fill="#9be9c6" font-family="Inter" font-size="11" text-anchor="middle" x="340" y="108">Deep Neural Network / Weights</text>
+<text fill="#d8e6dc" font-family="Inter" font-size="11" text-anchor="middle" x="340" y="128">Calculates Pattern Probabilities</text>
+<text fill="#a4f3d0" font-family="DM Sans" font-size="10" text-anchor="middle" x="340" y="148">[No conscious thinking]</text>
+<path d="M 450 110 L 510 110" stroke="#00513b" stroke-width="2"></path>
+<g transform="translate(510, 20)">
+<rect fill="#e9f7ed" height="34" rx="4" stroke="#bec9c2" stroke-width="1" width="220" x="0" y="10"></rect>
+<text fill="#00513b" font-family="DM Sans" font-size="12" font-weight="600" text-anchor="middle" x="110" y="32">📝 Synthesized Text &amp; Essays</text>
+<rect fill="#e9f7ed" height="34" rx="4" stroke="#bec9c2" stroke-width="1" width="220" x="0" y="52"></rect>
+<text fill="#00513b" font-family="DM Sans" font-size="12" font-weight="600" text-anchor="middle" x="110" y="74">🎨 Generated Diagrams &amp; Art</text>
+<rect fill="#e9f7ed" height="34" rx="4" stroke="#bec9c2" stroke-width="1" width="220" x="0" y="94"></rect>
+<text fill="#00513b" font-family="DM Sans" font-size="12" font-weight="600" text-anchor="middle" x="110" y="116">🔊 Natural Synthesized Speech</text>
+<rect fill="#e9f7ed" height="34" rx="4" stroke="#bec9c2" stroke-width="1" width="220" x="0" y="136"></rect>
+<text fill="#00513b" font-family="DM Sans" font-size="12" font-weight="600" text-anchor="middle" x="110" y="158">💻 Python &amp; HTML Code</text>
+</g>
+<defs>
+<marker id="arrow" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10">
+<path d="M 0 1 L 8 5 L 0 9 z" fill="#00513b"></path>
+</marker>
+</defs>
+</svg>
+</div>
+<p class="font-body-sm text-body-sm text-secondary text-center">
+        Diagram represents structural engineering flow simplified for student curriculum inquiry.
+      </p>
+</section>
+<!-- Section 6: 5. Common Misconceptions (Myth vs Scientific Reality) -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-label-sm text-label-sm font-bold">5</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Common Misconceptions</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-xs flex flex-col gap-space-sm">
+<div class="flex items-start gap-2 text-error">
+<span class="material-symbols-outlined text-[20px] shrink-0 mt-0.5">cancel</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase font-bold text-error">Misconception / Myth</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">"Generative AI searches Google, cuts sentences, and tapes them together into a collage."</p>
+</div>
+</div>
+<div class="w-full h-px bg-surface-dim/40 my-1"></div>
+<div class="flex items-start gap-2 text-primary">
+<span class="material-symbols-outlined text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary">Scientific Reality</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">It does not assemble old snippets. The engine calculates mathematical probability to form every single word and pixel from scratch based on learned statistical patterns.</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-xs flex flex-col gap-space-sm">
+<div class="flex items-start gap-2 text-error">
+<span class="material-symbols-outlined text-[20px] shrink-0 mt-0.5">cancel</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase font-bold text-error">Misconception / Myth</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">"Because AI writes with fluent English grammar, it truly understands scientific concepts like a professor."</p>
+</div>
+</div>
+<div class="w-full h-px bg-surface-dim/40 my-1"></div>
+<div class="flex items-start gap-2 text-primary">
+<span class="material-symbols-outlined text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary">Scientific Reality</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Grammatical fluency is not biological understanding. An AI predicts which words logically follow each other without feeling, lived experience, or moral agency.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: 6. Key Takeaways for Students -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-xs flex flex-col gap-space-md">
+<div class="flex items-center gap-2 pb-2 border-b border-surface-dim/30">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">6</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Key Takeaways for Students</h3>
+</div>
+<ul class="space-y-space-sm">
+<li class="flex items-start gap-space-sm">
+<div class="w-5 h-5 rounded bg-primary flex items-center justify-center text-on-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">done</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Generative AI creates fresh synthetic content (text, image, audio) rather than simply retrieving stored database records.</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<div class="w-5 h-5 rounded bg-primary flex items-center justify-center text-on-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">done</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Models learn patterns and probabilities from massive training datasets without ever possessing conscious thought.</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<div class="w-5 h-5 rounded bg-primary flex items-center justify-center text-on-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">done</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">AI outputs must be treated as drafts—never as infallible source truth.</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<div class="w-5 h-5 rounded bg-primary flex items-center justify-center text-on-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">done</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">As a young Indian scholar, you are the editor, reviewer, and moral guardian of any work you produce with digital tools.</span>
+</li>
+</ul>
+</section>
+<div class="flex items-center justify-between pt-space-lg border-t border-surface-dim/40 mb-space-3xl">
+<a class="inline-flex items-center gap-2 px-space-lg py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary font-label-md text-label-md transition-colors" href="learn_ai.html">
+<span class="material-symbols-outlined text-[18px]">home</span>
+<span class="">Curriculum Hub</span>
+</a>
+<span class="font-label-sm text-label-sm text-secondary hidden sm:inline-block">Lesson 1 of 6</span>
+<button class="inline-flex items-center gap-2 px-space-lg py-space-sm rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors" onclick="loadLesson(2)" type="button">
+<span class="">Next Lesson</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</main>
+</div>
+</div>
+</div>
+<script>
+// Complete curriculum dataset containing exactly 6 lessons, each featuring all 7 mandatory sections
+const lessonData = {
+  1: {
+    num: 1,
+    title: "What is Generative AI?",
+    subtitle: "Text, Images & Responsible Creation",
+    meta: "Class 8–10 Foundations · Estimated reading time: 6 mins",
+    goals: [
+      { icon: "category", title: "Recognizing Synthesis", desc: "Understand that Generative AI produces brand-new content (text, imagery, voice) instead of just filtering pre-existing data." },
+      { icon: "psychology", title: "Pattern Math vs Real Mind", desc: "Learn why machines do not possess consciousness, opinions, or human memories—they calculate statistical probabilities." },
+      { icon: "hub", title: "Multi-Modal Applications", desc: "Identify the practical spectrum: from writing student essays and summarizing science notes to rendering digital illustrations." },
+      { icon: "shield_person", title: "Civic Responsibility", desc: "Recognize that human students remain 100% accountable for the originality and truth of work co-created with AI." }
+    ],
+    simpleEnglish: `Imagine an enthusiastic classmate who has spent years reading tens of millions of textbooks, poems, and encyclopedias. When you ask this friend to write an invitation for a school science fair, they do not copy-paste an old pamphlet from their bag. Instead, they synthesize fresh sentences word by word, drawing on patterns they observed across millions of other good invitations.
+
+Generative AI works on this exact principle of mathematical synthesis. Traditional software works like a calculator or a library filing cabinet: it looks up stored files or executes fixed rules. Generative AI is different. It is trained on giant collections of human cultural knowledge to generate entirely new combinations of words, artwork, or synthesized audio that never existed before.
+
+However, remember this vital truth: the AI has no thoughts, feelings, or real-life understanding of what it says. When it creates a poem about the monsoon rains over the Western Ghats, it has never felt a raindrop or smelled the wet earth; it simply knows which poetic words frequently occur together in beautiful literature.`,
+    teluguText: `జనరేటివ్ ఆర్టిఫిషియల్ ఇంటెలిజెన్స్ (Generative AI) అంటే ఏమిటి?
+సాధారణ కంప్యూటర్ ప్రోగ్రామ్‌లు కేవలం మనం ఇచ్చిన ఆదేశాలను లేదా ముందుగా దాచిన ఫైళ్లను వెతికి చూపిస్తాయి. కానీ జెనరేటివ్ AI సరికొత్త వాక్యాలను, అందమైన చిత్రాలను మరియు శబ్దాలను సరికొత్తగా సృష్టించగలదు.
+
+లక్షలాది పుస్తకాలు, వ్యాసాలు చదివిన ఒక తెలివైన విద్యార్థిలాగా ఇది పనిచేస్తుంది. మీరు ఒక కథ రాయమని అడిగితే, అది ఎక్కడినుంచో కాపీ చేయదు; గతంలో చూసిన లక్షలాది రచనల శైలి ఆధారంగా సరికొత్త పదాలను కూర్చి కొత్త కథను తయారు చేస్తుంది.
+
+ముఖ్య గమనిక: AI కి స్వంత ఆలోచనలు, భావోద్వేగాలు లేదా స్పృహ ఉండవు. వర్షం గురించి అది అందమైన కవిత రాయగలదు, కానీ వర్షపు చల్లదనాన్ని అది ఎన్నడూ అనుభవించలేదు. అది కేవలం పదాల మధ్య ఉండే గణిత సంబంధాలను లెక్కించి మనకు అందిస్తుంది.`,
+    everydayExample: {
+      headline: "The School Rocketry Club Announcement",
+      scenario: "Arjun, a 9th-grade student from Warangal, needs to design a bilingual poster and invitation for his school's ISRO Chandrayaan commemoration exhibit. Instead of starting with a blank sheet, he types into a generative AI tool: 'Draft an enthusiastic 4-sentence invitation for middle school students to join a model rocketry workshop, highlighting curiosity and teamwork.' Within 3 seconds, the software generates three fresh variations. Arjun reviews them, selects the most respectful draft, corrects a factual timeline about launch dates, and translates key scientific phrases into Telugu for his school notice board. Generative AI provided the starter framework, but Arjun exercised human judgment and local accuracy.",
+      takeaway: "AI served as a creative spark, but the human student retained editorial control."
+    },
+    diagram: {
+      caption: "Educational Flow: User Intent to Multi-Modal Synthesis",
+      svg: `<svg viewBox="0 0 760 220" class="w-full h-auto text-on-surface" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="70" width="160" height="80" rx="8" fill="#e3f1e7" stroke="#00513b" stroke-width="2"/>
+        <text x="90" y="105" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="14" fill="#00513b">User Prompt</text>
+        <text x="90" y="125" text-anchor="middle" font-family="Inter" font-size="11" fill="#3f4944">"Explain photosynthesis"</text>
+
+        <path d="M 170 110 L 230 110" stroke="#00513b" stroke-width="2" marker-end="url(#arrow)"/>
+
+        <rect x="230" y="45" width="220" height="130" rx="8" fill="#176b50" stroke="#00513b" stroke-width="2"/>
+        <text x="340" y="85" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="15" fill="#ffffff">Generative AI Engine</text>
+        <text x="340" y="108" text-anchor="middle" font-family="Inter" font-size="11" fill="#9be9c6">Deep Neural Network / Weights</text>
+        <text x="340" y="128" text-anchor="middle" font-family="Inter" font-size="11" fill="#d8e6dc">Calculates Pattern Probabilities</text>
+        <text x="340" y="148" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#a4f3d0">[No conscious thinking]</text>
+
+        <path d="M 450 110 L 510 110" stroke="#00513b" stroke-width="2"/>
+
+        <g transform="translate(510, 20)">
+          <rect x="0" y="10" width="220" height="34" rx="4" fill="#e9f7ed" stroke="#bec9c2" stroke-width="1"/>
+          <text x="110" y="32" text-anchor="middle" font-family="DM Sans" font-weight="600" font-size="12" fill="#00513b">📝 Synthesized Text &amp; Essays</text>
+
+          <rect x="0" y="52" width="220" height="34" rx="4" fill="#e9f7ed" stroke="#bec9c2" stroke-width="1"/>
+          <text x="110" y="74" text-anchor="middle" font-family="DM Sans" font-weight="600" font-size="12" fill="#00513b">🎨 Generated Diagrams &amp; Art</text>
+
+          <rect x="0" y="94" width="220" height="34" rx="4" fill="#e9f7ed" stroke="#bec9c2" stroke-width="1"/>
+          <text x="110" y="116" text-anchor="middle" font-family="DM Sans" font-weight="600" font-size="12" fill="#00513b">🔊 Natural Synthesized Speech</text>
+
+          <rect x="0" y="136" width="220" height="34" rx="4" fill="#e9f7ed" stroke="#bec9c2" stroke-width="1"/>
+          <text x="110" y="158" text-anchor="middle" font-family="DM Sans" font-weight="600" font-size="12" fill="#00513b">💻 Python &amp; HTML Code</text>
+        </g>
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1 L 8 5 L 0 9 z" fill="#00513b"/>
+          </marker>
+        </defs>
+      </svg>`
+    },
+    misconceptions: [
+      {
+        myth: "Generative AI searches Google, cuts sentences, and tapes them together into a collage.",
+        reality: "It does not assemble old snippets. The engine calculates mathematical probability to form every single word and pixel from scratch based on learned statistical patterns."
+      },
+      {
+        myth: "Because AI writes with fluent English grammar, it truly understands scientific concepts like a professor.",
+        reality: "Grammatical fluency is not biological understanding. An AI predicts which words logically follow each other without feeling, lived experience, or moral agency."
+      }
+    ],
+    takeaways: [
+      "Generative AI creates fresh synthetic content (text, image, audio) rather than simply retrieving stored database records.",
+      "Models learn patterns and probabilities from massive training datasets without ever possessing conscious thought.",
+      "AI outputs must be treated as drafts—never as infallible source truth.",
+      "As a young Indian scholar, you are the editor, reviewer, and moral guardian of any work you produce with digital tools."
+    ]
+  },
+  2: {
+    num: 2,
+    title: "What are Large Language Models (LLMs)?",
+    subtitle: "Tokens, Vectors & Language Representations",
+    meta: "Class 8–10 Foundations · Estimated reading time: 7 mins",
+    goals: [
+      { icon: "vpn_key", title: "Understanding Tokens", desc: "Discover how AI breaks language into small word-chunks called tokens (letters, prefixes, or full short words)." },
+      { icon: "scatter_plot", title: "Embeddings & Vectors", desc: "Learn how computers turn words into numerical coordinates where related concepts cluster close together." },
+      { icon: "library_books", title: "Scale of Training Data", desc: "Comprehend the sheer volume of digitized human text required to train foundational models." },
+      { icon: "public", title: "Indian Linguistic Context", desc: "Recognize the special challenges of tokenizing rich Indian languages like Telugu, Hindi, and Tamil." }
+    ],
+    simpleEnglish: `When you read a book, your mind grasps ideas, emotion, and stories. A computer processor, however, cannot understand words directly—it can only process numbers, calculations, and mathematical vectors. So, how does an AI process Shakespeare's plays or the Indian Constitution?
+
+The answer is a two-step transformation: Tokenisation and High-Dimensional Vector Embeddings.
+
+First, the model breaks incoming sentences into bite-sized units called 'tokens'. For example, the word 'unbreakable' might be divided into three tokens: 'un', 'break', and 'able'. A standard token is roughly equivalent to 4 characters in English.
+
+Second, each token is mapped to a list of numbers called a vector. Think of an enormous mathematical map of the universe. In this map, the word 'Apple' sits very close to 'Mango' and 'Guava' (fruit neighborhood), while the word 'King' minus 'Man' plus 'Woman' mathematically lands right next to 'Queen'! A Large Language Model (LLM) is simply an enormous neural network with hundreds of billions of numerical knobs (parameters) trained to navigate this map.`,
+    teluguText: `లార్జ్ లాంగ్వేజ్ మోడల్స్ (LLMs) అంటే ఏమిటి?
+మనం కంప్యూటర్‌తో ఇంగ్లీషు లేదా తెలుగులో మాట్లాడినప్పుడు, కంప్యూటర్ నేరుగా భాషను అర్థం చేసుకోలేదు. అది కేవలం సంఖ్యలను (Numbers) మాత్రమే గణించగలదు.
+
+భాషను కంప్యూటర్‌కు అర్థమయ్యేలా చేయడానికి దానిని 'టోకెన్లు' (Tokens) గా విభజిస్తారు. ఉదాహరణకు ఒక పెద్ద పదాన్ని చిన్న చిన్న ముక్కలుగా చేసి, ప్రతి ముక్కకు ఒక ప్రత్యేక సంఖ్యను కేటాయిస్తారు. 
+
+తరువాత, ఈ పదాలను గణిత పటంలో పాయింట్లుగా (Vectors) ఉంచుతారు. 'మామిడి', 'ఆపిల్' అనే పదాలు పండ్ల గుంపులో ఒకదానికొకటి దగ్గరగా ఉంటాయి. ఈ విధంగా బిలియన్ల సంఖ్యల సహాయంతో మానవ భాషలోని సంబంధాలను కంప్యూటర్ అంచనా వేస్తుంది. దీనినే 'లార్జ్ లాంగ్వేజ్ మోడల్' అంటారు.`,
+    everydayExample: {
+      headline: "The Telugu & English Dictionary Challenge",
+      scenario: "During a Class 8 language lab in Visakhapatnam, Sneha enters the sentence 'జ్ఞానం శక్తినిస్తుంది' (Knowledge gives strength) into an AI token analyzer alongside 'Knowledge is power'. In English, the sentence takes only 3 tokens. In Telugu, because of complex syllabic scripts (vattulu and guninthalu), the system splits the phrase into 8 smaller token fragments. Sneha discovers why multilingual AI requires specialized engineering so Indian languages are processed as efficiently and affordably as English.",
+      takeaway: "Tokens are the currency of LLMs; richer vernacular tokenizers create more capable regional AI tools."
+    },
+    diagram: {
+      caption: "Technical Pipeline: Raw Human Speech to Numerical Semantic Weights",
+      svg: `<svg viewBox="0 0 760 210" class="w-full h-auto text-on-surface" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="55" width="150" height="90" rx="8" fill="#ddece2" stroke="#4c635b" stroke-width="1.5"/>
+        <text x="85" y="90" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="13" fill="#121e18">Raw Text Input</text>
+        <text x="85" y="112" text-anchor="middle" font-family="Inter" font-size="11" fill="#3f4944">"Truth alone triumphs"</text>
+        <text x="85" y="128" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#00513b">Satyameva Jayate</text>
+
+        <path d="M 160 100 L 210 100" stroke="#00513b" stroke-width="2" marker-end="url(#arrow2)"/>
+
+        <rect x="210" y="55" width="160" height="90" rx="8" fill="#e3f1e7" stroke="#176b50" stroke-width="1.5"/>
+        <text x="290" y="85" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="13" fill="#00513b">1. Tokenisation</text>
+        <text x="290" y="105" text-anchor="middle" font-family="Inter" font-size="11" fill="#121e18">['Truth', 'alone', 'triumph', 's']</text>
+        <text x="290" y="125" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#4c635b">IDs: [482, 9120, 3144, 82]</text>
+
+        <path d="M 370 100 L 420 100" stroke="#00513b" stroke-width="2" marker-end="url(#arrow2)"/>
+
+        <rect x="420" y="45" width="160" height="110" rx="8" fill="#176b50" stroke="#00513b" stroke-width="2"/>
+        <text x="500" y="80" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="13" fill="#ffffff">2. Vector Space</text>
+        <text x="500" y="100" text-anchor="middle" font-family="Inter" font-size="11" fill="#9be9c6">High-Dim Embeddings</text>
+        <text x="500" y="120" text-anchor="middle" font-family="Inter" font-size="10" fill="#d8e6dc">[0.842, -0.194, 0.491...]</text>
+        <text x="500" y="138" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#a4f3d0">Semantic Proximity Map</text>
+
+        <path d="M 580 100 L 630 100" stroke="#00513b" stroke-width="2" marker-end="url(#arrow2)"/>
+
+        <rect x="630" y="55" width="120" height="90" rx="8" fill="#cce5da" stroke="#00513b" stroke-width="1.5"/>
+        <text x="690" y="90" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="13" fill="#091f19">3. Output</text>
+        <text x="690" y="112" text-anchor="middle" font-family="Inter" font-size="11" fill="#354b43">Contextual</text>
+        <text x="690" y="128" text-anchor="middle" font-family="Inter" font-size="11" fill="#354b43">Prediction</text>
+
+        <defs>
+          <marker id="arrow2" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1 L 8 5 L 0 9 z" fill="#00513b"/>
+          </marker>
+        </defs>
+      </svg>`
+    },
+    misconceptions: [
+      {
+        myth: "An LLM possesses a tiny conscious brain inside its data center server that reads English like a person.",
+        reality: "LLMs are massive mathematical matrices of floating-point numbers. They perform billion-step matrix multiplications to match numerical token patterns."
+      },
+      {
+        myth: "Bigger models automatically know all Indian history without any factual errors.",
+        reality: "Models inherit biases and data gaps present in their internet training sources. Historical accuracy depends on rigorous curriculum alignment and fact verification."
+      }
+    ],
+    takeaways: [
+      "Tokens are the fundamental building blocks of LLMs, breaking text into recognizable sub-words.",
+      "Vector embeddings convert words into spatial numbers so machines can measure conceptual closeness.",
+      "Model parameters are mathematical weights calibrated during months of computing training.",
+      "Indian languages require culturally representative training corpora for fair and accurate performance."
+    ]
+  },
+  3: {
+    num: 3,
+    title: "How Does ChatGPT Work?",
+    subtitle: "Prompts, Context Windows & Next-Token Prediction",
+    meta: "Class 8–10 Mechanics · Estimated reading time: 6 mins",
+    goals: [
+      { icon: "short_text", title: "Next-Token Prediction", desc: "Discover how chatbots write sentences one single token at a time based on highest contextual probability." },
+      { icon: "dock", title: "The Context Window", desc: "Understand the working memory of the conversation and why extremely long chats can lose early details." },
+      { icon: "tune", title: "Prompt Engineering Basics", desc: "Master the art of giving clear instructions, constraints, and roles to get high-quality assistance." },
+      { icon: "verified_user", title: "RLHF & Safety Tuning", desc: "Learn how human educators train AI systems to refuse harmful, illegal, or unethical instructions." }
+    ],
+    simpleEnglish: `When you begin typing on your mobile phone's keyboard and see three recommended words above the keys, that is a tiny next-word predictor. If you type 'The sun rises in the...', your phone immediately suggests 'east'.
+
+ChatGPT operates on a supercharged, hyper-advanced version of this exact mechanism called a 'Transformer'. It does not generate entire paragraphs in one giant flash. Instead, it reads everything you have typed (your Prompt) along with what it has written so far, and asks its mathematical weights:
+'Given all this context, what is the single most probable token that should appear next?'
+
+It picks that token, places it at the end of the sentence, and repeats the calculation for the next token! It completes this loop dozens of times per second. To make sure the AI answers helpfully and politely rather than randomly spitting internet text, engineers use 'Reinforcement Learning from Human Feedback' (RLHF)—teaching the model with human teachers to be safe, kind, and informative.`,
+    teluguText: `ChatGPT ఎలా పనిచేస్తుంది?
+మనం మొబైల్ ఫోన్‌లో టైప్ చేస్తున్నప్పుడు కీబోర్డ్ పైన వచ్చే 'ఆటో-కంప్లీట్' సూచనలను మీరు గమనించే ఉంటారు. ఉదాహరణకు 'సూర్యుడు తూర్పున...' అని టైప్ చేయగానే కీబోర్డ్ 'ఉదయిస్తాడు' అనే పదాన్ని సూచిస్తుంది.
+
+ChatGPT కూడా సరిగ్గా ఇదే సూత్రంపై పనిచేస్తుంది. దీనిని 'నెక్స్ట్-టోకెన్ ప్రిడిక్షన్' (Next-Token Prediction) అంటారు. మీరు అడిగిన ప్రశ్నను చదివి, ఆ ప్రశ్నకు సమాధానంగా తర్వాత ఏ పదం వస్తే బాగుంటుందో గణితశాస్త్రం ప్రకారం అంచనా వేస్తుంది.
+
+ఇలా ఒకదాని తర్వాత మరొక పదాన్ని సెకనులో అనేకసార్లు లెక్కించి పూర్తి వాక్యాన్ని మనకు అందిస్తుంది. ఇది ఏకకాలంలో మొత్తం వ్యాసాన్ని సృష్టించదు; ఒక్కో పదాన్ని వేగంగా జోడిస్తూ ముందుకు సాగుతుంది.`,
+    everydayExample: {
+      headline: "The Science Project Formulation Prompt",
+      scenario: "Kavya, an 8th-grade student in Vijayawada, is preparing an exhibit on rainwater harvesting. She writes a vague prompt: 'Tell me about water.' The chatbot responds with general, boring definitions. Kavya revises her prompt with clear role, context, and constraints: 'You are a middle-school science mentor. Suggest 3 low-cost experiments demonstrating rooftop rainwater filtration suitable for an Indian village school, using sand, gravel, and charcoal. Keep each under 60 words.' The chatbot immediately produces precise, actionable classroom experiments because the context guided the prediction math.",
+      takeaway: "The clearer your prompt and constraints, the more relevant the mathematical probability response will be."
+    },
+    diagram: {
+      caption: "Interactive Loop: Probabilistic Next-Token Generation",
+      svg: `<svg viewBox="0 0 760 210" class="w-full h-auto text-on-surface" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="60" width="160" height="85" rx="8" fill="#e9f7ed" stroke="#00513b" stroke-width="1.5"/>
+        <text x="90" y="92" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="13" fill="#00513b">Prompt Context</text>
+        <text x="90" y="112" text-anchor="middle" font-family="Inter" font-size="11" fill="#3f4944">"The peacock is"</text>
+        <text x="90" y="128" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#4c635b">Active Window</text>
+
+        <path d="M 170 102 L 230 102" stroke="#00513b" stroke-width="2" marker-end="url(#arrow3)"/>
+
+        <rect x="230" y="45" width="220" height="115" rx="8" fill="#176b50" stroke="#00513b" stroke-width="2"/>
+        <text x="340" y="80" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="14" fill="#ffffff">Attention Mechanism</text>
+        <text x="340" y="102" text-anchor="middle" font-family="Inter" font-size="11" fill="#9be9c6">Calculates Probability Dist:</text>
+        <text x="340" y="122" text-anchor="middle" font-family="DM Sans" font-size="11" fill="#effdf3">"the" (88%) · "India's" (7%) · "a" (4%)</text>
+        <text x="340" y="142" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#a4f3d0">Picks top plausible token: "the"</text>
+
+        <path d="M 450 102 L 510 102" stroke="#00513b" stroke-width="2" marker-end="url(#arrow3)"/>
+
+        <rect x="510" y="60" width="230" height="85" rx="8" fill="#ddece2" stroke="#00513b" stroke-width="1.5"/>
+        <text x="625" y="90" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="13" fill="#002116">Iterative Append Loop</text>
+        <text x="625" y="112" text-anchor="middle" font-family="Inter" font-weight="600" font-size="12" fill="#00513b">"The peacock is the..."</text>
+        <text x="625" y="130" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#354b43">Next cycle predicts: "national bird"</text>
+
+        <defs>
+          <marker id="arrow3" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1 L 8 5 L 0 9 z" fill="#00513b"/>
+          </marker>
+        </defs>
+      </svg>`
+    },
+    misconceptions: [
+      {
+        myth: "ChatGPT stores finished essays like pre-written PDF files in a giant warehouse and downloads them.",
+        reality: "It stores zero pre-written essays. Every single response is dynamically formulated token by token on the fly in real-time."
+      },
+      {
+        myth: "Because ChatGPT answers politely, it knows who you are and has personal feelings towards you.",
+        reality: "It is simulating a helpful conversational tone because it was trained with human feedback guidelines. It has neither identity nor empathy."
+      }
+    ],
+    takeaways: [
+      "Chatbots synthesize responses by iteratively predicting the next most probable token.",
+      "The Transformer architecture allows the model to pay 'attention' to relationships between words across long sentences.",
+      "Specific prompts that include role, context, and clear limits give far better learning assistance.",
+      "Polite prose does not guarantee factual truth—always double check claims against official textbooks."
+    ]
+  },
+  4: {
+    num: 4,
+    title: "How AI Generates Images (Diffusion)",
+    subtitle: "From Static Noise to Crisp Pictures",
+    meta: "Class 8–10 Media & Computer Vision · Estimated reading time: 7 mins",
+    goals: [
+      { icon: "blur_on", title: "Gaussian Noise", desc: "Understand that AI art begins not with a blank canvas, but with a swarm of random static pixels." },
+      { icon: "auto_fix_high", title: "Reverse Diffusion", desc: "Discover how neural denoisers remove grain step-by-step to reveal recognizable shapes." },
+      { icon: "style", title: "Text Conditioning", desc: "Learn how the written prompt acts as a steering wheel guiding the denoising direction." },
+      { icon: "copyright", title: "Artist Rights & Authenticity", desc: "Appreciate civic questions regarding how training artwork is sourced and respected." }
+    ],
+    simpleEnglish: `Imagine taking a shower in the winter: the bathroom window gets completely covered in thick water steam and fog so you can't see anything outside. But then, as you gradually wipe away the steam in gentle passes, outlines appear: first a tree branch, then a rooftop, and finally the clear sunrise over your garden.
+
+Modern image generators (like Stable Diffusion or Midjourney) work through a process called Diffusion.
+
+During training, engineers take millions of photos and deliberately destroy them by adding random digital grain (noise) step-by-step until the picture looks like old television static. A neural network is trained to reverse this process: learning how to wipe away a little bit of noise at a time.
+
+When you ask the AI for 'A solar-powered tractor in an Indian sunflower farm at sunset', the computer creates pure random static noise. Guided by your written prompt, it removes the noise over 30 to 50 mathematical steps until sharp sunflowers, golden sunlight, and the green tractor emerge!`,
+    teluguText: `కంప్యూటర్ చిత్రాలను ఎలా గీస్తుంది? (డిఫ్యూజన్ ప్రక్రియ)
+శీతాకాలంలో ఇంటి కిటికీ అద్దాలపై పొగమంచు లేదా ఆవిరి కమ్ముకున్నప్పుడు మనకు బయట ఏమీ కనిపించదు. కానీ నెమ్మదిగా ఆ మంచును తుడిచివేస్తుంటే, బయట ఉన్న చెట్లు, సూర్యుడు స్పష్టంగా కనిపిస్తాయి కదా!
+
+డిఫ్యూజన్ AI మోడల్స్ కూడా సరిగ్గా అలాగే పనిచేస్తాయి. ఇవి ఖాళీ తెల్ల కాగితంపై బొమ్మలు గీయవు. ముందుగా కంప్యూటర్ తెరపై టీవీ సిగ్నల్ పోయినప్పుడు వచ్చే నలుపు-తెలుపు చుక్కల వంటి 'నాయిస్' (Noise) ను తీసుకుంటాయి.
+
+మనం ఇచ్చిన సూచనను (Prompt) బట్టి, ఆ చుక్కల గందరగోళం నుండి అవాంఛిత చుక్కలను తొలగిస్తూ (Denoising) క్రమంగా అందమైన మరియు స్పష్టమైన చిత్రాన్ని బయటకు తీస్తాయి.`,
+    everydayExample: {
+      headline: "The School Magazine Cover Art",
+      scenario: "For the annual science magazine in Karimnagar, Rahul wants an illustration showing rural students launching a weather balloon. Instead of illegally downloading an uncredited sketch from internet image search, he uses an educational diffusion demo with the prompt: 'Watercolor illustration of three Indian schoolchildren in uniforms tracking a high-altitude weather balloon over lush green paddy fields, soft morning light.' The model begins with pure noise and refines it into a respectful painting in 40 steps. Rahul credits the image caption properly: 'Assisted by Diffusion AI, prompt engineered by Student Editorial Board'.",
+      takeaway: "Diffusion models denoise random fields into coherent scenes guided by human aesthetic prompts."
+    },
+    diagram: {
+      caption: "Step-by-Step Denoising Architecture: Static Noise to Detailed Art",
+      svg: `<svg viewBox="0 0 760 210" class="w-full h-auto text-on-surface" xmlns="http://www.w3.org/2000/svg">
+        <g transform="translate(20, 45)">
+          <rect x="0" y="0" width="130" height="110" rx="6" fill="#cfddd4" stroke="#6f7973" stroke-width="1.5"/>
+          <circle cx="30" cy="30" r="4" fill="#3f4944" opacity="0.6"/>
+          <circle cx="70" cy="45" r="5" fill="#3f4944" opacity="0.5"/>
+          <circle cx="105" cy="25" r="3" fill="#3f4944" opacity="0.7"/>
+          <circle cx="45" cy="80" r="6" fill="#3f4944" opacity="0.4"/>
+          <circle cx="90" cy="85" r="4" fill="#3f4944" opacity="0.8"/>
+          <text x="65" y="130" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="12" fill="#121e18">Step 0: Pure Noise</text>
+          <text x="65" y="145" text-anchor="middle" font-family="Inter" font-size="10" fill="#606a64">Random Gaussian Pixels</text>
+        </g>
+
+        <path d="M 165 100 L 205 100" stroke="#00513b" stroke-width="2" marker-end="url(#arrow4)"/>
+
+        <g transform="translate(210, 45)">
+          <rect x="0" y="0" width="130" height="110" rx="6" fill="#ddece2" stroke="#176b50" stroke-width="1.5"/>
+          <path d="M 20 85 Q 65 30 110 85" fill="none" stroke="#4c635b" stroke-width="4" stroke-dasharray="4 2"/>
+          <circle cx="65" cy="50" r="14" fill="#ffb68c" opacity="0.5"/>
+          <text x="65" y="130" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="12" fill="#121e18">Step 15: Outlines</text>
+          <text x="65" y="145" text-anchor="middle" font-family="Inter" font-size="10" fill="#606a64">Rough Shapes Emerge</text>
+        </g>
+
+        <path d="M 355 100 L 395 100" stroke="#00513b" stroke-width="2" marker-end="url(#arrow4)"/>
+
+        <g transform="translate(400, 45)">
+          <rect x="0" y="0" width="130" height="110" rx="6" fill="#e3f1e7" stroke="#176b50" stroke-width="1.5"/>
+          <path d="M 20 85 Q 65 35 110 85" fill="none" stroke="#176b50" stroke-width="3"/>
+          <circle cx="65" cy="45" r="16" fill="#ffcfb5"/>
+          <path d="M 10 95 L 120 95" stroke="#354b43" stroke-width="2"/>
+          <text x="65" y="130" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="12" fill="#121e18">Step 35: Lighting</text>
+          <text x="65" y="145" text-anchor="middle" font-family="Inter" font-size="10" fill="#606a64">Refined Details &amp; Depth</text>
+        </g>
+
+        <path d="M 545 100 L 585 100" stroke="#00513b" stroke-width="2" marker-end="url(#arrow4)"/>
+
+        <g transform="translate(590, 45)">
+          <rect x="0" y="0" width="145" height="110" rx="6" fill="#176b50" stroke="#00513b" stroke-width="2"/>
+          <circle cx="72" cy="40" r="18" fill="#ffdbc9"/>
+          <path d="M 20 85 C 50 60, 90 60, 125 85 Z" fill="#9be9c6"/>
+          <path d="M 10 100 L 135 100" stroke="#effdf3" stroke-width="2"/>
+          <text x="72" y="130" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="12" fill="#ffffff">Step 50: Final Output</text>
+          <text x="72" y="145" text-anchor="middle" font-family="Inter" font-size="10" fill="#a4f3d0">Crisp High-Res Render</text>
+        </g>
+
+        <!-- Prompt Guidance Label -->
+        <rect x="180" y="175" width="400" height="26" rx="4" fill="#effdf3" stroke="#bec9c2" stroke-width="1"/>
+        <text x="380" y="192" text-anchor="middle" font-family="DM Sans" font-weight="600" font-size="11" fill="#00513b">
+          🧭 Text Prompt Guides Every Step of the Neural Denoising Filter
+        </text>
+
+        <defs>
+          <marker id="arrow4" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1 L 8 5 L 0 9 z" fill="#00513b"/>
+          </marker>
+        </defs>
+      </svg>`
+    },
+    misconceptions: [
+      {
+        myth: "Image AI grabs copyright photos from the internet, crops out the heads, and glues them into a collage.",
+        reality: "It does not store image pieces. It stores mathematical equations describing how light, edges, and textures behave, generating fresh pixels from pure math."
+      },
+      {
+        myth: "If an AI image looks photorealistic, the event depicted must have actually occurred in history.",
+        reality: "Photorealism does not equal reality. Generative diffusion can create hyper-realistic images of events that never happened (deepfakes)."
+      }
+    ],
+    takeaways: [
+      "Diffusion models synthesize images by progressively wiping out noise guided by text descriptions.",
+      "The process transforms random mathematical distribution into structured pixels over dozens of micro-steps.",
+      "AI imagery must never be accepted as photographic evidence without provenance verification.",
+      "Digital citizens must respect creative artists and practice responsible visual attribution."
+    ]
+  },
+  5: {
+    num: 5,
+    title: "AI Audio & Speech Synthesis",
+    subtitle: "TTS, STT & Acoustic Authenticity",
+    meta: "Class 8–10 Acoustics & Voice Tech · Estimated reading time: 6 mins",
+    goals: [
+      { icon: "record_voice_over", title: "Text-to-Speech (TTS)", desc: "Learn how written letters are converted into phonemes, pitch contours, and fluid human voice." },
+      { icon: "hearing", title: "Speech-to-Text (STT)", desc: "Understand how microphones capture air vibration frequencies and translate them into typed text." },
+      { icon: "spatial_audio", title: "Voice Cloning Ethics", desc: "Examine how short audio samples can clone human voices and why consent is non-negotiable." },
+      { icon: "accessibility_new", title: "Assistive Technologies", desc: "Discover how speech AI enables screen readers for visually impaired citizens and rural farmers." }
+    ],
+    simpleEnglish: `When your phone GPS tells you, 'Turn right in 200 meters', or your regional train station announces arrivals in Hindi, Telugu, and English, you are hearing Speech Synthesis at work.
+
+Voice AI operates along two interconnected bridges:
+1. Text-to-Speech (TTS): You type a written sentence. The AI breaks the text into sound fragments called 'phonemes'. Then, an acoustic model predicts the melody, cadence, breathing pauses, and emotional pitch, rendering it as human-like audio waves.
+2. Speech-to-Text (STT): When you talk to a voice assistant, your microphone picks up sound wave vibrations. The AI converts those frequencies into a spectrogram (a picture of sound) and transcribes them into readable text tokens.
+
+Modern synthetic voices sound so lifelike that it is difficult to distinguish a real person's recording from an AI generation. While this is wonderful for helping students who cannot read printed books, it also brings a serious civic challenge: scammers can clone voices to trick families. We must always verify unusual voice calls before sharing personal details.`,
+    teluguText: `ధ్వని మరియు వాయిస్ సింథసిస్ (AI Audio)
+మనం నావిగేషన్ ఉపయోగిస్తున్నప్పుడు 'ముందుకు వెళ్లి కుడివైపు తిరగండి' అని ఫోన్ మాట్లాడటం లేదా రైల్వే స్టేషన్లలో మూడు భాషల్లో అనౌన్స్‌మెంట్‌లు రావడం మనం రోజూ చూస్తూనే ఉంటాం.
+
+దీని వెనుక రెండు ప్రధాన సాంకేతికతలు ఉన్నాయి:
+1. టెక్స్ట్-టు-స్పీచ్ (TTS): మనం రాసిన అక్షరాలను శబ్దాలుగా మార్చి, సహజమైన మానవ గొంతుకలా మాట్లాడేలా చేస్తుంది.
+2. స్పీచ్-టు-టెక్స్ట్ (STT): మనం నోటితో మాట్లాడే మాటలను విని, ఆ ధ్వని తరంగాలను గుర్తించి అక్షరాల రూపంలో టైప్ చేస్తుంది.
+
+ఈ సాంకేతికత చూపులేని విద్యార్థులకు, పుస్తకాలు చదవలేని గ్రామీణ రైతులకు ఎంతగానో ఉపయోగపడుతుంది. అయితే ఇతరుల గొంతును వారి అనుమతి లేకుండా అనుకరించడం (Voice Cloning) నేరమని విద్యార్థులు గుర్తించాలి.`,
+    everydayExample: {
+      headline: "The Accessible Village Farming Advisory",
+      scenario: "In an agricultural cooperative near Guntur, farmers receive daily market prices and weather alerts. Many elder farmers prefer listening over reading tiny phone screens. An AI civic bot converts text agricultural bulletins from the Department of Agriculture into clear, natural spoken Telugu audio notes sent via WhatsApp. When a farmer speaks a query in regional dialect ('ఈ వారం వర్షం పడుతుందా?'), STT transcribes the speech, retrieves the official meteorological report, and TTS speaks the forecast back aloud in under four seconds.",
+      takeaway: "Voice AI bridges the literacy divide, making public information universally accessible."
+    },
+    diagram: {
+      caption: "Bi-Directional Voice Pipeline: Spoken Waves ↔ Written Tokens",
+      svg: `<svg viewBox="0 0 760 210" class="w-full h-auto text-on-surface" xmlns="http://www.w3.org/2000/svg">
+        <!-- Top Track: Text to Speech -->
+        <g transform="translate(20, 25)">
+          <rect x="0" y="10" width="180" height="60" rx="6" fill="#e3f1e7" stroke="#00513b" stroke-width="1.5"/>
+          <text x="90" y="35" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="12" fill="#00513b">Written Script</text>
+          <text x="90" y="53" text-anchor="middle" font-family="Inter" font-size="11" fill="#3f4944">"Welcome to Science Lab"</text>
+
+          <path d="M 180 40 L 260 40" stroke="#00513b" stroke-width="2" marker-end="url(#arrow5)"/>
+
+          <rect x="260" y="10" width="220" height="60" rx="6" fill="#176b50" stroke="#00513b" stroke-width="1.5"/>
+          <text x="370" y="35" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="12" fill="#ffffff">TTS Acoustic Model</text>
+          <text x="370" y="53" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#a4f3d0">Phonemes → Pitch → Mel-Spectrogram</text>
+
+          <path d="M 480 40 L 560 40" stroke="#00513b" stroke-width="2" marker-end="url(#arrow5)"/>
+
+          <rect x="560" y="10" width="170" height="60" rx="6" fill="#cce5da" stroke="#00513b" stroke-width="1.5"/>
+          <text x="645" y="35" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="12" fill="#091f19">🔊 Lifelike Voice</text>
+          <text x="645" y="53" text-anchor="middle" font-family="Inter" font-size="10" fill="#354b43">Synthesized Soundwave</text>
+        </g>
+
+        <!-- Divider line -->
+        <line x1="40" y1="108" x2="720" y2="108" stroke="#bec9c2" stroke-dasharray="4 4"/>
+
+        <!-- Bottom Track: Speech to Text -->
+        <g transform="translate(20, 120)">
+          <rect x="0" y="10" width="180" height="60" rx="6" fill="#ddece2" stroke="#4c635b" stroke-width="1.5"/>
+          <text x="90" y="35" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="12" fill="#121e18">🎙️ Human Voice Input</text>
+          <text x="90" y="53" text-anchor="middle" font-family="Inter" font-size="11" fill="#4c635b">Microphone Audio Waves</text>
+
+          <path d="M 180 40 L 260 40" stroke="#4c635b" stroke-width="2" marker-end="url(#arrow5)"/>
+
+          <rect x="260" y="10" width="220" height="60" rx="6" fill="#4c635b" stroke="#121e18" stroke-width="1.5"/>
+          <text x="370" y="35" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="12" fill="#ffffff">STT Acoustic Decoder</text>
+          <text x="370" y="53" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#cfe8dd">Fourier Transform → Phoneme Matching</text>
+
+          <path d="M 480 40 L 560 40" stroke="#4c635b" stroke-width="2" marker-end="url(#arrow5)"/>
+
+          <rect x="560" y="10" width="170" height="60" rx="6" fill="#effdf3" stroke="#4c635b" stroke-width="1.5"/>
+          <text x="645" y="35" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="12" fill="#00513b">📄 Transcribed Text</text>
+          <text x="645" y="53" text-anchor="middle" font-family="Inter" font-size="10" fill="#3f4944">Digital Text Output</text>
+        </g>
+
+        <defs>
+          <marker id="arrow5" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1 L 8 5 L 0 9 z" fill="#00513b"/>
+          </marker>
+        </defs>
+      </svg>`
+    },
+    misconceptions: [
+      {
+        myth: "Computers store voice recordings of human actors saying every single word in the dictionary.",
+        reality: "Voice models do not store complete words. They model tiny phonemes and vocal cords mathematics to synthesize brand new combinations smoothly."
+      },
+      {
+        myth: "If you receive an audio clip that sounds exactly like your school principal or parent, it must be genuine.",
+        reality: "AI voice cloning can replicate anyone's pitch and accent using just 10 seconds of sample audio. Always verify urgent monetary requests via trusted channels."
+      }
+    ],
+    takeaways: [
+      "Speech synthesis empowers vital civic and accessibility utilities across diverse Indian language speakers.",
+      "TTS turns text to natural audio using phoneme mapping; STT turns soundwaves into searchable text tokens.",
+      "Voice cloning poses critical security risks that require human skepticism and strong identity verification.",
+      "Ethical engineers obtain explicit consent before training on any individual's unique voice."
+    ]
+  },
+  6: {
+    num: 6,
+    title: "Hallucinations & Fact-Checking",
+    subtitle: "Critical Verification & Civic Ethics",
+    meta: "Class 8–10 Media Literacy · Estimated reading time: 8 mins",
+    goals: [
+      { icon: "report_problem", title: "Defining Hallucinations", desc: "Recognize when an AI states false claims, imaginary dates, or fake scientific studies with extreme confidence." },
+      { icon: "rule", title: "The Probabilistic Root Cause", desc: "Understand that AI optimizes for plausibility (sounding right) rather than verified ground truth." },
+      { icon: "checklist", title: "The 3-Step Verification Habit", desc: "Equip yourself with the golden student protocol: Primary Source Check, Corroboration, and Skepticism." },
+      { icon: "balance", title: "Civic Responsibility in India", desc: "Protect your school community from algorithmic rumors, election hoaxes, and medical misinformation." }
+    ],
+    simpleEnglish: `Have you ever heard a person tell a story with total confidence, using big vocabulary and a calm smile, only to find out later that the story was completely made up?
+
+In Artificial Intelligence, this phenomenon is called an 'AI Hallucination'.
+
+Because LLMs predict what words *look plausible together* rather than querying a verified factual database of the universe, they can sometimes invent fake book titles, cite non-existent Supreme Court rulings, or mix up dates in Indian history. Even worse, the AI delivers these errors with fluent, highly persuasive language!
+
+Never submit school homework, medical advice, or scientific claims simply because an AI generated them. The golden rule of modern education is:
+**'AI is a tireless drafting assistant, but the human student is always the chief fact-checker.'** Always cross-verify dates, numbers, and scientific formulas with your NCERT textbooks or peer-reviewed educational repositories.`,
+    teluguText: `AI భ్రమలు (Hallucinations) మరియు వాస్తవాల నిర్ధారణ
+కొంతమంది చాలా ఆత్మవిశ్వాసంతో, చక్కని పదాలతో మాట్లాడతారు, కానీ లోపల విషయం పూర్తిగా అబద్ధమై ఉంటుంది. AI కూడా కొన్నిసార్లు ఇలాగే ప్రవర్తిస్తుంది. దీనిని సాంకేతిక పరిభాషలో 'హాలూసినేషన్' (AI Hallucination) అంటారు.
+
+AI పదాల మధ్య సంబంధాలను మాత్రమే లెక్కిస్తుంది కానీ, అది చెప్పే విషయం నిజమో కాదో దానికి స్వయంగా తెలియదు. అందువల్ల కొన్నిసార్లు లేని చరిత్ర సంఘటనలను, అసత్య సైన్స్ సిద్ధాంతాలను, లేదా రాని కోర్టు తీర్పులను కూడా నిజంలా చెప్పేస్తుంది.
+
+విద్యార్థులు పాటించాల్సిన ముఖ్యమైన సూత్రం:
+AI ఇచ్చిన సమాచారాన్ని గుడ్డిగా నమ్మకూడదు! ఎల్లప్పుడూ మీ పాఠ్యపుస్తకాలు (NCERT/SCERT) మరియు అధికారిక ఆధారాలతో సరిచూసుకున్న తర్వాతే ప్రాజెక్టులలో ఉపయోగించాలి.`,
+    everydayExample: {
+      headline: "The ISRO Satellite Launch Verification",
+      scenario: "During a Class 10 social studies research assignment on India's space program, Sai asks a chatbot: 'List three satellites launched by ISRO in 1982.' The chatbot answers: '1. INSAT-1A, 2. Bhaskara-III, 3. Rohini-D2.' Sai feels suspicious about 'Bhaskara-III'. Instead of copying it into his report, he visits the official ISRO portal (isro.gov.in) and consults his school library encyclopedia. He discovers Bhaskara-I was launched in 1979 and Bhaskara-II in 1981—there was never a Bhaskara-III! The AI had hallucinated the name because it followed the pattern of numbering. Sai corrects his paper and shares the lesson with his classmates.",
+      takeaway: "Official portals and textbooks are the gold standard; AI drafts must always be verified."
+    },
+    diagram: {
+      caption: "The Civic Verification Protocol for Responsible Students",
+      svg: `<svg viewBox="0 0 760 210" class="w-full h-auto text-on-surface" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="60" width="160" height="90" rx="8" fill="#ffdad6" stroke="#ba1a1a" stroke-width="1.5"/>
+        <text x="90" y="90" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="12" fill="#93000a">⚠️ 1. AI Generated Claim</text>
+        <text x="90" y="110" text-anchor="middle" font-family="Inter" font-size="10" fill="#93000a">High-Confidence Draft</text>
+        <text x="90" y="126" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#93000a">[Unverified Draft]</text>
+
+        <path d="M 170 105 L 230 105" stroke="#ba1a1a" stroke-width="2" marker-end="url(#arrow6)"/>
+
+        <rect x="230" y="45" width="230" height="120" rx="8" fill="#e3f1e7" stroke="#00513b" stroke-width="2"/>
+        <text x="345" y="75" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="13" fill="#00513b">2. Primary Source Audit</text>
+        <text x="345" y="96" text-anchor="middle" font-family="Inter" font-size="11" fill="#121e18">Cross-check against:</text>
+        <text x="345" y="116" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#354b43">✓ NCERT / State Textbooks</text>
+        <text x="345" y="132" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#354b43">✓ Official Gov Portals (.gov.in / .edu)</text>
+        <text x="345" y="148" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#354b43">✓ Peer-Reviewed Scientific Journals</text>
+
+        <path d="M 460 105 L 520 105" stroke="#00513b" stroke-width="2" marker-end="url(#arrow6)"/>
+
+        <rect x="520" y="60" width="230" height="90" rx="8" fill="#176b50" stroke="#00513b" stroke-width="1.5"/>
+        <text x="635" y="90" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="13" fill="#ffffff">3. Grounded Knowledge</text>
+        <text x="635" y="112" text-anchor="middle" font-family="Inter" font-size="11" fill="#9be9c6">Verified Student Submission</text>
+        <text x="635" y="130" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#a4f3d0">Academic &amp; Civic Integrity</text>
+
+        <defs>
+          <marker id="arrow6" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1 L 8 5 L 0 9 z" fill="#00513b"/>
+          </marker>
+        </defs>
+      </svg>`
+    },
+    misconceptions: [
+      {
+        myth: "If an AI lists citations with authors, publication years, and page numbers, those books definitely exist.",
+        reality: "LLMs can synthesize plausible-looking academic citations out of thin air. Always search library catalogs or Google Scholar to confirm their reality."
+      },
+      {
+        myth: "Fact-checking is only necessary for internet gossip, not for school math or biology homework.",
+        reality: "Models can make subtle errors in arithmetic, chemical formulas, and historical chronology. Critical fact-checking is essential in every discipline."
+      }
+    ],
+    takeaways: [
+      "AI hallucinations happen because LLMs prioritize language plausibility over empirical truth.",
+      "Grammatical fluency and polite confidence should never be mistaken for factual correctness.",
+      "Always apply the 3-step verification habit: audit against NCERT books, government repositories, or peer-reviewed sources.",
+      "As an informed Indian student, upholding scientific temper and truth is your constitutional duty (Article 51A(h))."
+    ]
+  }
+};
+
+let currentLesson = 1;
+
+function renderLesson(num) {
+  currentLesson = num;
+  const data = lessonData[num];
+  const container = document.getElementById('lesson-viewport');
+  if (!container || !data) return;
+
+  // Update progress stats
+  const progressText = document.getElementById('progress-text');
+  const progressBar = document.getElementById('progress-bar-fill');
+  const percent = Math.round((num / 6) * 100);
+
+  if (progressText) progressText.innerText = `Lesson ${num} of 6`;
+  if (progressBar) progressBar.style.width = `${percent}%`;
+
+  // Update sidebar active buttons
+  for (let i = 1; i <= 6; i++) {
+    const btn = document.getElementById(`nav-btn-${i}`);
+    if (btn) {
+      if (i === num) {
+        btn.className = "nav-lesson-btn w-full text-left p-space-sm rounded-lg transition-all flex items-start gap-space-sm bg-surface-container text-on-surface font-semibold shadow-xs border-l-4 border-primary";
+        const badge = btn.querySelector('span');
+        if (badge) badge.className = "w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md shrink-0 mt-0.5";
+      } else if (i < num) {
+        btn.className = "nav-lesson-btn w-full text-left p-space-sm rounded-lg transition-all flex items-start gap-space-sm hover:bg-surface-container-low text-on-surface-variant";
+        const badge = btn.querySelector('span');
+        if (badge) badge.className = "w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-md text-label-md shrink-0 mt-0.5";
+      } else {
+        btn.className = "nav-lesson-btn w-full text-left p-space-sm rounded-lg transition-all flex items-start gap-space-sm hover:bg-surface-container-low text-on-surface-variant";
+        const badge = btn.querySelector('span');
+        if (badge) badge.className = "w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-md text-label-md shrink-0 mt-0.5";
+      }
+    }
+  }
+
+  // Update mobile selector
+  const mobileSelect = document.getElementById('mobile-lesson-select');
+  if (mobileSelect) mobileSelect.value = num;
+
+  // Build lesson HTML with all 7 exact required sections
+  let html = `
+    <!-- Lesson Header -->
+    <div class="flex flex-col gap-space-xs pb-space-sm border-b border-surface-dim/40">
+      <div class="flex items-center gap-2">
+        <span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Lesson 0${data.num}</span>
+        <span class="text-outline">·</span>
+        <span class="font-label-sm text-label-sm text-secondary">${data.meta}</span>
+      </div>
+      <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">${data.title}</h2>
+      <p class="font-body-md text-body-md text-secondary">${data.subtitle}</p>
+    </div>
+
+    <!-- Section 1: What Will You Learn in This Lesson? -->
+    <section class="flex flex-col gap-space-sm">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-[22px]">lightbulb</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">What Will You Learn in This Lesson?</h3>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+        ${data.goals.map((g, idx) => `
+          <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-xs flex items-start gap-space-sm">
+            <div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+              <span class="material-symbols-outlined text-[20px]">${g.icon}</span>
+            </div>
+            <div class="flex flex-col min-w-0">
+              <span class="font-label-md text-label-md text-on-surface font-semibold">${g.title}</span>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">${g.desc}</p>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </section>
+
+    <!-- Section 2: 1. Simple English Explanation -->
+    <section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-xs flex flex-col gap-space-md">
+      <div class="flex items-center gap-2 pb-2 border-b border-surface-dim/30">
+        <span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">1</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Simple English Explanation</h3>
+      </div>
+      <div class="space-y-space-md font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        ${data.simpleEnglish.split('\n\n').map(p => `<p>${p}</p>`).join('')}
+      </div>
+    </section>
+
+    <!-- Section 3: 2. తెలుగు వివరణ (Bilingual Explanation) -->
+    <section class="bg-surface-container-low p-space-lg rounded-xl shadow-xs flex flex-col gap-space-md">
+      <div class="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-surface-dim/40">
+        <div class="flex items-center gap-2">
+          <span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">2</span>
+          <h3 class="font-headline-sm text-headline-sm text-primary font-bold">తెలుగు వివరణ (Bilingual Explanation)</h3>
+        </div>
+        <span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-2.5 py-1 rounded">
+          ప్రాంతీయ భాషా మాధ్యమం
+        </span>
+      </div>
+      <div class="space-y-space-md font-body-md text-body-md text-on-surface leading-relaxed">
+        ${data.teluguText.split('\n\n').map(p => `<p>${p}</p>`).join('')}
+      </div>
+    </section>
+
+    <!-- Section 4: 3. Everyday-Life Real Example -->
+    <section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-xs flex flex-col gap-space-md">
+      <div class="flex items-center gap-2 pb-2 border-b border-surface-dim/30">
+        <span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">3</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Everyday-Life Real Example</h3>
+      </div>
+      <div class="flex flex-col gap-space-sm">
+        <span class="font-headline-sm text-headline-sm text-primary font-bold">${data.everydayExample.headline}</span>
+        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          ${data.everydayExample.scenario}
+        </p>
+        <div class="mt-space-xs p-space-sm rounded-lg bg-surface-container flex items-center gap-space-sm text-primary">
+          <span class="material-symbols-outlined text-[20px] shrink-0">tips_and_updates</span>
+          <span class="font-label-md text-label-md font-semibold">${data.everydayExample.takeaway}</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: 4. Architectural Diagram -->
+    <section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-xs flex flex-col gap-space-md">
+      <div class="flex items-center gap-2 pb-2 border-b border-surface-dim/30">
+        <span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">4</span>
+        <div class="flex flex-col">
+          <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Architectural Visual Diagram</h3>
+          <span class="font-label-sm text-label-sm text-secondary">${data.diagram.caption}</span>
+        </div>
+      </div>
+      <div class="w-full bg-surface-container-low p-space-md rounded-lg overflow-x-auto">
+        ${data.diagram.svg}
+      </div>
+      <p class="font-body-sm text-body-sm text-secondary text-center">
+        Diagram represents structural engineering flow simplified for student curriculum inquiry.
+      </p>
+    </section>
+
+    <!-- Section 6: 5. Common Misconceptions (Myth vs Scientific Reality) -->
+    <section class="flex flex-col gap-space-sm">
+      <div class="flex items-center gap-2">
+        <span class="w-6 h-6 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-label-sm text-label-sm font-bold">5</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Common Misconceptions</h3>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+        ${data.misconceptions.map(m => `
+          <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-xs flex flex-col gap-space-sm">
+            <div class="flex items-start gap-2 text-error">
+              <span class="material-symbols-outlined text-[20px] shrink-0 mt-0.5">cancel</span>
+              <div class="flex flex-col">
+                <span class="font-label-sm text-label-sm uppercase font-bold text-error">Misconception / Myth</span>
+                <p class="font-body-sm text-body-sm text-on-surface mt-1">"${m.myth}"</p>
+              </div>
+            </div>
+            <div class="w-full h-px bg-surface-dim/40 my-1"></div>
+            <div class="flex items-start gap-2 text-primary">
+              <span class="material-symbols-outlined text-[20px] shrink-0 mt-0.5">check_circle</span>
+              <div class="flex flex-col">
+                <span class="font-label-sm text-label-sm uppercase font-bold text-primary">Scientific Reality</span>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">${m.reality}</p>
+              </div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </section>
+
+    <!-- Section 7: 6. Key Takeaways for Students -->
+    <section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-xs flex flex-col gap-space-md">
+      <div class="flex items-center gap-2 pb-2 border-b border-surface-dim/30">
+        <span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">6</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Key Takeaways for Students</h3>
+      </div>
+      <ul class="space-y-space-sm">
+        ${data.takeaways.map(t => `
+          <li class="flex items-start gap-space-sm">
+            <div class="w-5 h-5 rounded bg-primary flex items-center justify-center text-on-primary shrink-0 mt-0.5">
+              <span class="material-symbols-outlined text-[14px]">done</span>
+            </div>
+            <span class="font-body-md text-body-md text-on-surface">${t}</span>
+          </li>
+        `).join('')}
+      </ul>
+    </section>
+  `;
+
+  // Celebration Banner at Lesson 6 Completion
+  if (num === 6) {
+    html += `
+      <div class="w-full bg-primary-container text-on-primary p-space-xl rounded-2xl shadow-md flex flex-col md:flex-row items-center justify-between gap-space-lg">
+        <div class="flex items-center gap-space-md">
+          <div class="w-14 h-14 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-[32px]">workspace_premium</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider font-semibold">Milestone Complete</span>
+            <h4 class="font-headline-md text-headline-md font-bold leading-tight">You Finished the Generative AI Path!</h4>
+            <p class="font-body-sm text-body-sm text-surface-container mt-1">
+              You now understand how AI synthesizes language and images, and why critical human fact-checking protects our democratic society.
+            </p>
+          </div>
+        </div>
+        <a href="#" data-path="learn-ai" class="inline-flex items-center justify-center whitespace-nowrap bg-surface-container-lowest text-primary font-label-lg text-label-lg font-bold px-space-xl py-space-md rounded-xl hover:bg-surface-bright transition-all shadow-sm">
+          Return to Learn AI Portal
+        </a>
+      </div>
+    `;
+  }
+
+  // Bottom Navigation Controls (Previous / Next Lesson)
+  html += `
+    <div class="flex items-center justify-between pt-space-lg border-t border-surface-dim/40 mb-space-3xl">
+      ${num > 1 ? `
+        <button type="button" onclick="loadLesson(${num - 1})" class="inline-flex items-center gap-2 px-space-lg py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold transition-colors">
+          <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+          <span>Previous Lesson</span>
+        </button>
+      ` : `
+        <a href="#" data-path="learn-ai" class="inline-flex items-center gap-2 px-space-lg py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary font-label-md text-label-md transition-colors">
+          <span class="material-symbols-outlined text-[18px]">home</span>
+          <span>Curriculum Hub</span>
+        </a>
+      `}
+
+      <span class="font-label-sm text-label-sm text-secondary hidden sm:inline-block">Lesson ${num} of 6</span>
+
+      ${num < 6 ? `
+        <button type="button" onclick="loadLesson(${num + 1})" class="inline-flex items-center gap-2 px-space-lg py-space-sm rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors">
+          <span>Next Lesson</span>
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </button>
+      ` : `
+        <a href="#" data-path="learn-ai" class="inline-flex items-center gap-2 px-space-lg py-space-sm rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors">
+          <span>Curriculum Home</span>
+          <span class="material-symbols-outlined text-[18px]">check_circle</span>
+        </a>
+      `}
+    </div>
+  `;
+
+  container.innerHTML = html;
+}
+
+function loadLesson(num) {
+  renderLesson(num);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Bind mobile dropdown selector
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileSelect = document.getElementById('mobile-lesson-select');
+  if (mobileSelect) {
+    mobileSelect.addEventListener('change', function(e) {
+      loadLesson(parseInt(e.target.value, 10));
+    });
+  }
+  // Initial render
+  renderLesson(1);
+});
+
+// Fallback direct execution in case DOMContentLoaded already fired
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+  renderLesson(1);
+}
+</script></main><footer class="w-full bg-inverse-surface text-inverse-on-surface"><div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin pt-space-3xl pb-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter"><div class="lg:col-span-5 flex flex-col gap-space-md pr-space-lg"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-inverse-on-surface tracking-tight">AI Mitra</span><span class="font-label-sm text-label-sm tracking-widest uppercase text-inverse-primary">National Student Awareness Initiative</span></div><p class="font-body-sm text-body-sm text-surface-variant max-w-md">An open, public-interest educational platform demystifying artificial intelligence for students, educators, and citizens across India. Grounded in critical thinking, algorithmic equity, and civic inquiry.</p><div class="mt-space-sm flex items-center gap-space-xs text-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[18px] text-inverse-primary">lock_open</span><span class="">Open Courseware • Free for Public Use</span></div></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-inverse-primary font-semibold uppercase tracking-wider mb-space-xs">Learning Pathways</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="" data-path="foundations"><a class="text-surface-variant hover:text-inverse-on-surface transition-colors" href="#">AI Foundations &amp; History</a></li><li class="" data-path="generative-ai"><a class="text-surface-variant hover:text-inverse-on-surface transition-colors" href="#">Generative AI Architecture</a></li><li class="" data-path="critical-inquiry"><a class="text-surface-variant hover:text-inverse-on-surface transition-colors" href="#">Critical Media Literacy</a></li><li class="" data-path="ethics-and-society"><a class="text-surface-variant hover:text-inverse-on-surface transition-colors" href="#">Bias, Rights &amp; Governance</a></li><li class="" data-path="classroom-kits"><a class="text-surface-variant hover:text-inverse-on-surface transition-colors" href="#">Educator Lesson Toolkits</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-inverse-primary font-semibold uppercase tracking-wider mb-space-xs">Civic Initiatives</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="" data-path="student-fellows"><a class="text-surface-variant hover:text-inverse-on-surface transition-colors" href="#">Student Fellows</a></li><li class="" data-path="regional-workshops"><a class="text-surface-variant hover:text-inverse-on-surface transition-colors" href="#">Vernacular AI Guides</a></li><li class="" data-path="case-studies"><a class="text-surface-variant hover:text-inverse-on-surface transition-colors" href="#">Real-World Case Studies</a></li><li class="" data-path="research-digest"><a class="text-surface-variant hover:text-inverse-on-surface transition-colors" href="#">Research Digest</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-inverse-primary font-semibold uppercase tracking-wider mb-space-xs">Accountability</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="" data-path="privacy-notice"><a class="text-surface-variant hover:text-inverse-on-surface transition-colors" href="#">Privacy Framework</a></li><li class="" data-path="editorial-standards"><a class="text-surface-variant hover:text-inverse-on-surface transition-colors" href="#">Editorial Standards</a></li><li class="" data-path="data-ethics"><a class="text-surface-variant hover:text-inverse-on-surface transition-colors" href="#">Data Practices</a></li><li class="" data-path="accessibility"><a class="text-surface-variant hover:text-inverse-on-surface transition-colors" href="#">Accessibility</a></li></ul></div></div><div class="mt-space-3xl pt-space-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md text-surface-variant font-body-sm text-body-sm"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-inverse-primary">copyright</span><span class="">Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).</span></div><div class="flex items-center gap-space-lg font-label-sm text-label-sm"><a class="hover:text-inverse-on-surface transition-colors" href="#">Terms of Use</a><a class="hover:text-inverse-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-inverse-on-surface transition-colors" href="#">Open Source Code</a></div></div></div></footer>
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-10 opacity-0 pointer-events-none transition-all duration-300 bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-lg shadow-md flex items-center gap-space-sm font-label-md text-label-md" id="global-toast"><span class="material-symbols-outlined text-[18px] text-inverse-primary">info</span><span class="" id="global-toast-msg">Coming Soon: This module is currently being developed.</span></div><script>function showToast(msg){const t=document.getElementById('global-toast');const m=document.getElementById('global-toast-msg');if(!t)return;if(msg)m.innerText=msg;t.classList.remove('opacity-0','translate-y-10','pointer-events-none');t.classList.add('opacity-100','translate-y-0');setTimeout(()=>{t.classList.remove('opacity-100','translate-y-0');t.classList.add('opacity-0','translate-y-10','pointer-events-none');},3000);}document.addEventListener('click',function(e){const link=e.target.closest('a');if(!link)return;const path=link.getAttribute('data-path');if(path==='home'){e.preventDefault();window.location.href='/';}else if(path==='learn-ai'||path==='start-learning'){e.preventDefault();window.location.href='/learn-ai';}else if(['ai-in-real-life','use-ai-wisely','resources','about','foundations','generative-ai','critical-inquiry','ethics-and-society','classroom-kits','student-fellows','regional-workshops','case-studies','research-digest','privacy-notice','editorial-standards','data-ethics','accessibility','terms-of-use','privacy-policy','open-source'].includes(path)){e.preventDefault();showToast('Coming Soon: This module is currently being developed.');}});const origRenderLesson=window.renderLesson;if(typeof origRenderLesson==='function'){window.renderLesson=function(num){const viewport=document.getElementById('lesson-viewport');if(viewport){viewport.style.transition='opacity 200ms ease';viewport.style.opacity='0.4';setTimeout(()=>{origRenderLesson(num);viewport.style.opacity='1';},200);}else{origRenderLesson(num);}};}</script>
+<script src="js/site-config.js"></script><script src="js/site-navigation.js"></script></body></html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Mitra — Explore AI Together</title>
+<!-- Google Fonts: Plus Jakarta Sans & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#176B50',
+              hover: '#12543e',
+              light: '#eff7f3',
+              dark: '#172D26',
+            },
+            editorial: {
+              bg: '#FFFFFF',
+              alt: '#F5F4EF',
+              text: '#17231D',
+              secondary: '#606A64',
+              border: '#E8EAE6',
+              borderDark: '#233d34',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          animation: {
+            'pulse-subtle': 'pulseSubtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float-subtle': 'floatGentle 6s ease-in-out infinite',
+          },
+          keyframes: {
+            pulseSubtle: {
+              '0%, 100%': { opacity: '1', transform: 'scale(1)' },
+              '50%': { opacity: '0.8', transform: 'scale(1.02)' }
+            },
+            floatGentle: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-6px)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Animated Underline Effect for Nav Links */
+    .nav-link {
+      position: relative;
+      transition: color 250ms ease;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -6px;
+      left: 0;
+      background-color: #176B50;
+      border-radius: 9999px;
+      transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .nav-link:hover::after, .nav-link.active::after {
+      width: 100%;
+    }
+
+    /* Organic border-radius morphing */
+    .organic-morph-hero {
+      border-radius: 46% 54% 63% 37% / 42% 45% 55% 58%;
+      transition: border-radius 700ms cubic-bezier(0.4, 0, 0.2, 1), transform 600ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 600ms ease;
+    }
+    .hero-container:hover .organic-morph-hero {
+      border-radius: 52% 48% 44% 56% / 50% 56% 44% 50%;
+    }
+
+    .organic-morph-workshop {
+      border-radius: 58% 42% 52% 48% / 46% 58% 42% 54%;
+      transition: border-radius 700ms cubic-bezier(0.4, 0, 0.2, 1), transform 600ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 600ms ease;
+    }
+    .workshop-card-wrap:hover .organic-morph-workshop {
+      border-radius: 48% 52% 43% 57% / 54% 47% 53% 46%;
+    }
+
+    /* Respect reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+<link href="css/site-navigation.css" rel="stylesheet"/></head>
+<body class="bg-[#FFFFFF] text-editorial-text font-sans antialiased selection:bg-[#176B50]/15 selection:text-[#176B50]">
+<!-- ================= 1. HEADER & NAVIGATION ================= -->
+<header class="aimitra-site-header">
+<div class="aimitra-header-inner">
+<a aria-label="AI Mitra home" class="aimitra-brand" href="index.html">
+<span aria-hidden="true" class="aimitra-brand-mark">
+<svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 3V21M3 12H21" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path>
+<circle cx="12" cy="12" fill="currentColor" r="3"></circle>
+<circle cx="6" cy="6" fill="currentColor" r="1.5"></circle>
+<circle cx="18" cy="18" fill="currentColor" r="1.5"></circle>
+</svg>
+</span>
+<span class="aimitra-brand-copy">
+<strong>AI Mitra</strong>
+<small>Explore AI Together</small>
+</span>
+</a>
+<nav aria-label="Main navigation" class="aimitra-nav-links">
+<a href="index.html">Home</a>
+<a href="learn_ai.html">Learn AI</a>
+<a href="ai_in_real_life.html">AI in Real Life</a>
+<a href="resource.html">Resources</a>
+<a href="about.html">About</a>
+</nav>
+<div class="aimitra-nav-actions">
+<a class="aimitra-start-learning" href="learn_ai.html">Start Learning</a>
+<button aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation" class="aimitra-menu-toggle" id="mobileMenuBtn" type="button">
+<svg aria-hidden="true" class="aimitra-menu-open" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-width="2"></path></svg>
+<svg aria-hidden="true" class="aimitra-menu-close" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+<div class="aimitra-mobile-menu" hidden="" id="mobileMenu">
+<nav aria-label="Mobile navigation">
+<a href="index.html">Home</a>
+<a href="learn_ai.html">Learn AI</a>
+<a href="ai_in_real_life.html">AI in Real Life</a>
+<a href="resource.html">Resources</a>
+<a href="about.html">About</a>
+<a class="aimitra-mobile-start" href="learn_ai.html">Start Learning</a>
+</nav>
+</div>
+</header>
+<!-- ================= 2. HERO SECTION ================= -->
+<section class="relative bg-white pt-12 pb-16 lg:pt-20 lg:pb-24 border-b border-editorial-border overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left: Editorial Content -->
+<div class="lg:col-span-6 flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 mb-4">
+<span class="w-2 h-2 rounded-full bg-brand animate-ping"></span>
+<span class="text-xs font-semibold uppercase tracking-wider text-brand font-display">AI Awareness for School Students</span>
+</div>
+<h1 class="font-display text-4xl sm:text-5xl lg:text-[56px] font-extrabold text-editorial-text leading-[1.12] tracking-tight mb-3">
+            AI Mitra
+          </h1>
+<p class="font-display text-2xl sm:text-3xl font-semibold text-editorial-text/90 tracking-tight mb-6">
+            Explore AI Together.
+          </p>
+<p class="text-base sm:text-lg text-editorial-secondary leading-relaxed mb-8 max-w-xl font-normal">
+            Discover Artificial Intelligence, understand how it shapes our world and learn to use it wisely. Start exploring with simple explanations and real-life examples.
+          </p>
+<!-- Action Buttons with micro-interactions -->
+<div class="flex flex-wrap items-center gap-4 pt-1">
+<a class="group inline-flex items-center justify-center gap-2 px-6 py-3.5 text-[15px] font-semibold text-white bg-brand hover:bg-brand-hover hover:-translate-y-0.5 hover:scale-[1.03] hover:shadow-xl hover:shadow-brand/30 active:translate-y-0 active:scale-[0.98] rounded-md transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand" href="learn_ai.html"><span class="">Start Exploring</span><svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1.5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a>
+<a class="inline-flex items-center justify-center px-6 py-3.5 text-[15px] font-semibold text-editorial-text bg-white hover:border-brand hover:bg-brand/5 hover:text-brand border border-editorial-border rounded-md transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-editorial-border" href="about.html">
+              About AI Mitra
+            </a>
+</div>
+<!-- Interactive Chips / Trust Footnote -->
+<div class="mt-10 pt-6 border-t border-editorial-border/60 flex flex-wrap items-center gap-2.5 sm:gap-4 text-xs text-editorial-secondary">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-editorial-border/70 bg-editorial-alt/50 hover:bg-brand/10 hover:border-brand/30 hover:text-brand transition-all duration-300 cursor-default">
+<span class="w-1.5 h-1.5 rounded-full bg-brand"></span>
+              Independent, student-led
+            </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-editorial-border/70 bg-editorial-alt/50 hover:bg-brand/10 hover:border-brand/30 hover:text-brand transition-all duration-300 cursor-default">
+<span class="w-1.5 h-1.5 rounded-full bg-brand"></span>
+              100% Free Resources
+            </span>
+</div>
+</div>
+<!-- Right: Authentic Documentary Photography with lively organic morph & hover effects -->
+<div class="lg:col-span-6 relative hero-container group animate-float-subtle">
+<!-- Organic soft ambient glow -->
+<div class="absolute -inset-5 bg-gradient-to-tr from-brand/20 via-emerald-200/50 to-teal-100/30 blur-2xl opacity-75 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 pointer-events-none" style="border-radius: 54% 46% 62% 38% / 48% 55% 45% 52%;"></div>
+<!-- Image Card with Organic Curved Border and feathered mask blend -->
+<div class="relative organic-morph-hero overflow-hidden bg-editorial-alt shadow-lg shadow-brand/10 transition-all duration-700 ease-out group-hover:shadow-2xl group-hover:shadow-brand/20" style="mask-image: radial-gradient(96% 96%, rgb(0, 0, 0) 78%, transparent 100%); -webkit-mask-image: radial-gradient(96% 96%, rgb(0, 0, 0) 78%, transparent 100%);">
+<img alt="Schoolgirls exploring learning tools and technology together on a laptop" class="w-full h-auto object-cover object-center aspect-[4/3] block transition-transform duration-700 ease-out group-hover:scale-[1.03]" loading="eager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL3aMKnP5ViihluAVAMEDynELLRfLJndaxw3VzGanCqADmWiZYQaesWUKypoqiYLC20xJ9HET-Oe7Db4Nf1sp6TEPwrZWiyBhEz7zfpXXH4b5cYa-xesHyT4xu3EvbnLKRnJsXuOCOZ1Vpi-GpMOzQ0jHnYuGJVG3oYNg_cqcaMSTWsGlhi0ao-xZQmY47DqezKl4_izJN6ov_naFeU65zh3q7p_6S3AMGRp2zzNGbLY1THi5mTDkC"/>
+<!-- Subtle vignette overlay -->
+<div class="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-60 group-hover:opacity-20 transition-opacity duration-500"></div>
+<!-- Interactive badge overlaid on hero image -->
+<div class="absolute top-5 right-5 z-10 transition-transform duration-300 group-hover:scale-105">
+</div>
+</div>
+<!-- Caption underneath -->
+<div class="mt-4 px-2 flex items-center justify-between text-xs text-editorial-secondary italic">
+<span class="">Students discovering practical digital tools and exploring together</span>
+<span class="inline-flex items-center gap-1 not-italic font-medium text-brand text-[11px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Classes 8-10 Initiative
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 3. EXPLORE WITH AI MITRA ================= -->
+<section class="bg-[#F5F4EF] py-16 lg:py-24 border-b border-editorial-border" id="explore">
+<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<span class="text-xs font-semibold uppercase tracking-wider text-brand font-display block mb-2">Curriculum Pathways</span>
+<h2 class="font-display text-3xl sm:text-4xl font-bold text-editorial-text tracking-tight mb-3">
+            Explore with AI Mitra
+          </h2>
+<p class="text-base sm:text-lg text-editorial-secondary leading-relaxed">
+            Curiosity starts with a question. Discover where yours can take you.
+          </p>
+</div>
+<!-- Interactive category filters -->
+<div class="flex flex-wrap items-center gap-2" role="tablist">
+<button class="px-3.5 py-1.5 text-xs font-semibold rounded-full bg-brand text-white shadow-xs transition-all duration-200 hover:opacity-95" type="button">
+            All Pathways
+          </button>
+<button class="px-3.5 py-1.5 text-xs font-medium rounded-full bg-white text-editorial-secondary hover:text-editorial-text hover:bg-white/80 border border-editorial-border transition-all duration-200" type="button">
+            Real-World Impact
+          </button>
+<button class="px-3.5 py-1.5 text-xs font-medium rounded-full bg-white text-editorial-secondary hover:text-editorial-text hover:bg-white/80 border border-editorial-border transition-all duration-200" type="button">
+            Digital Safety &amp; Ethics
+          </button>
+</div>
+</div>
+<!-- Editorial Navigation Rows with delightful hover effects and tag pills -->
+<div class="bg-white rounded-xl border border-editorial-border shadow-sm overflow-hidden divide-y divide-editorial-border">
+<!-- Destination 1: Learn AI -->
+<a class="group block p-6 sm:p-8 hover:bg-[#FAF9F5] hover:shadow-lg hover:scale-[1.01] transition-all duration-300 relative" href="learn_ai.html"><div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-center"><div class="md:col-span-1"><span class="inline-flex items-center justify-center w-8 h-8 rounded-md text-xs font-mono font-bold text-brand bg-brand/10 group-hover:bg-brand group-hover:text-white transition-all duration-300">01</span></div><div class="md:col-span-4"><h3 class="font-display text-xl sm:text-2xl font-bold text-editorial-text group-hover:text-brand transition-colors duration-300">Learn AI</h3><div class="flex flex-wrap gap-2 mt-2"><span class="text-[11px] font-medium px-2 py-0.5 rounded bg-editorial-alt text-editorial-secondary border border-editorial-border group-hover:border-brand/20 group-hover:text-brand transition-colors duration-200">4 Self-Paced Modules</span><span class="text-[11px] font-medium px-2 py-0.5 rounded bg-editorial-alt text-editorial-secondary border border-editorial-border group-hover:border-brand/20 group-hover:text-brand transition-colors duration-200">No Coding Needed</span></div></div><div class="md:col-span-6"><p class="text-editorial-secondary text-sm sm:text-base leading-relaxed">Start with the basics and discover how Artificial Intelligence works through clear, step-by-step thinking.</p></div><div class="md:col-span-1 flex justify-end"><span class="w-10 h-10 rounded-full flex items-center justify-center text-editorial-secondary bg-editorial-alt border border-editorial-border group-hover:bg-brand group-hover:text-white group-hover:border-brand group-hover:translate-x-1.5 transition-all duration-300 shadow-xs"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span></div></div></a>
+<!-- Destination 2: AI in Real Life -->
+<a class="group block p-6 sm:p-8 hover:bg-[#FAF9F5] hover:shadow-md transition-all duration-300 relative" href="ai_in_real_life.html">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+<div class="md:col-span-1">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-md text-xs font-mono font-bold text-brand bg-brand/10 group-hover:bg-brand group-hover:text-white transition-all duration-300">
+                02
+              </span>
+</div>
+<div class="md:col-span-4">
+<h3 class="font-display text-xl sm:text-2xl font-bold text-editorial-text group-hover:text-brand transition-colors duration-300">
+                AI in Real Life
+              </h3>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="text-[11px] font-medium px-2 py-0.5 rounded bg-editorial-alt text-editorial-secondary border border-editorial-border group-hover:border-brand/20 group-hover:text-brand transition-colors duration-200">Everyday Indian Examples</span>
+<span class="text-[11px] font-medium px-2 py-0.5 rounded bg-editorial-alt text-editorial-secondary border border-editorial-border group-hover:border-brand/20 group-hover:text-brand transition-colors duration-200">Healthcare &amp; Agri</span>
+</div>
+</div>
+<div class="md:col-span-6">
+<p class="text-editorial-secondary text-sm sm:text-base leading-relaxed">
+                Explore how AI is being used in education, healthcare, agriculture and beyond in everyday communities.
+              </p>
+</div>
+<div class="md:col-span-1 flex justify-end">
+<span class="w-10 h-10 rounded-full flex items-center justify-center text-editorial-secondary bg-editorial-alt border border-editorial-border group-hover:bg-brand group-hover:text-white group-hover:border-brand group-hover:translate-x-1.5 transition-all duration-300 shadow-xs">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+</div>
+</div>
+</a>
+<!-- Destination 3: Use AI Wisely -->
+<!-- Destination 4: Free Resources -->
+<a class="group block p-6 sm:p-8 hover:bg-[#FAF9F5] hover:shadow-md transition-all duration-300 relative" href="resource.html">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+<div class="md:col-span-1">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-md text-xs font-mono font-bold text-brand bg-brand/10 group-hover:bg-brand group-hover:text-white transition-all duration-300">03</span>
+</div>
+<div class="md:col-span-4">
+<h3 class="font-display text-xl sm:text-2xl font-bold text-editorial-text group-hover:text-brand transition-colors duration-300">
+                Free Resources
+              </h3>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="text-[11px] font-medium px-2 py-0.5 rounded bg-editorial-alt text-editorial-secondary border border-editorial-border group-hover:border-brand/20 group-hover:text-brand transition-colors duration-200">Worksheets &amp; Guides</span>
+<span class="text-[11px] font-medium px-2 py-0.5 rounded bg-editorial-alt text-editorial-secondary border border-editorial-border group-hover:border-brand/20 group-hover:text-brand transition-colors duration-200">Open Access</span>
+</div>
+</div>
+<div class="md:col-span-6">
+<p class="text-editorial-secondary text-sm sm:text-base leading-relaxed">
+                Find useful courses, interactive experiments, student guides and open learning materials curated for schools.
+              </p>
+</div>
+<div class="md:col-span-1 flex justify-end">
+<span class="w-10 h-10 rounded-full flex items-center justify-center text-editorial-secondary bg-editorial-alt border border-editorial-border group-hover:bg-brand group-hover:text-white group-hover:border-brand group-hover:translate-x-1.5 transition-all duration-300 shadow-xs">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- ================= 4. SCHOOL WORKSHOP SECTION ================= -->
+<section class="bg-white py-16 lg:py-24 border-b border-editorial-border" id="workshops">
+<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Authentic Workshop Photograph -->
+<div class="lg:col-span-6 order-2 lg:order-1 workshop-card-wrap relative group">
+<!-- Ambient soft emerald background glow -->
+<div class="absolute -inset-4 bg-gradient-to-tr from-brand/15 via-emerald-100/50 to-teal-50/20 blur-2xl opacity-60 group-hover:opacity-95 transition-opacity duration-700 pointer-events-none" style="border-radius: 40% 60% 48% 52% / 56% 44% 56% 44%;"></div>
+<!-- Organic curved container with radial fade mask & gentle hover tilt -->
+<div class="relative organic-morph-workshop overflow-hidden bg-editorial-alt shadow-lg shadow-brand/5 transition-all duration-700 ease-out group-hover:shadow-xl group-hover:shadow-brand/15 group-hover:-rotate-0.5" style="-webkit-mask-image: radial-gradient(ellipse 95% 95% at 50% 50%, #000 80%, transparent 100%); mask-image: radial-gradient(ellipse 95% 95% at 50% 50%, #000 80%, transparent 100%);">
+<img alt="Teacher and school students engaging with an interactive digital board during classroom learning" class="w-full h-auto object-cover object-center aspect-[16/10] block transition-transform duration-700 ease-out group-hover:scale-[1.04]" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMuBZn4WFBFjBw31wYJQX_34MjphFW_ELtKAGa5ih6IwDrtsvePh-dEZL5Mf_NGpfKJjmziUC_QQjPvrtdzbGxbDwrJ8NXsGV6pPbqMzHZh_O0-1JK7YuCwcNwskfoCrwrKwTR-I330U5EIHWQ3Voc1BeSMPfzYg6op4XoStmAvAi2r_etMS8LYx6aWmaTuYdW3mYWN1CIzp62OXFYoGGtjTWMmu-kMVTuIOgTCLORphyI7j1fXWqo"/>
+<div class="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/25 via-transparent to-transparent opacity-50 group-hover:opacity-20 transition-opacity duration-500"></div>
+</div>
+<div class="mt-4 px-2 flex items-center justify-between text-xs text-editorial-secondary italic">
+<span class="">Facilitated classroom session: participatory discussions on critical thinking</span>
+<span class="inline-flex items-center gap-1.5 font-medium not-italic text-brand text-[11px] bg-brand/10 px-2.5 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-brand"></span>
+              Hands-on
+            </span>
+</div>
+</div>
+<!-- Workshop Text Content & Invitation -->
+<div class="lg:col-span-6 order-1 lg:order-2 flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 mb-3">
+<span class="text-xs font-semibold uppercase tracking-wider text-brand font-display">In-School Initiatives</span>
+</div>
+<h2 class="font-display text-3xl sm:text-4xl lg:text-[42px] font-bold text-editorial-text leading-[1.2] tracking-tight mb-5">
+            Let's bring AI learning into classrooms.
+          </h2>
+<p class="text-base sm:text-lg text-editorial-secondary leading-relaxed mb-8 font-normal">
+            AI Mitra conducts simple, interactive AI awareness sessions to help school students understand the technology shaping their future.
+          </p>
+<!-- Interactive Feature checklist points with hover effects -->
+<div class="space-y-2 mb-8 text-sm text-editorial-text/90">
+<div class="flex items-start gap-3.5 p-2.5 rounded-xl hover:bg-emerald-50/80 transition-all duration-200 cursor-default">
+<span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand/10 text-brand flex items-center justify-center font-bold text-xs mt-0.5">✓</span>
+<span class="leading-relaxed">Tailored specifically for teenagers in Classes 8, 9, and 10</span>
+</div>
+<div class="flex items-start gap-3.5 p-2.5 rounded-xl hover:bg-emerald-50/80 transition-all duration-200 cursor-default">
+<span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand/10 text-brand flex items-center justify-center font-bold text-xs mt-0.5">✓</span>
+<span class="leading-relaxed">Dialogue-driven, participatory discussions using everyday Indian examples</span>
+</div>
+<div class="flex items-start gap-3.5 p-2.5 rounded-xl hover:bg-emerald-50/80 transition-all duration-200 cursor-default">
+<span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand/10 text-brand flex items-center justify-center font-bold text-xs mt-0.5">✓</span>
+<span class="leading-relaxed">Zero commercial promotion, completely open educational initiative</span>
+</div>
+</div>
+<div>
+<a aria-haspopup="dialog" class="group inline-flex items-center justify-center gap-2 px-6 py-3.5 text-[15px] font-semibold text-white bg-brand hover:bg-brand-hover hover:-translate-y-0.5 hover:shadow-lg hover:shadow-brand/25 active:translate-y-0 rounded-md transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand" data-school-invite-open="true" href="#schoolInviteFormModal">
+<span class="">Invite AI Mitra to Your School</span>
+<svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 5. FOOTER ================= -->
+<footer class="bg-[#172D26] text-white pt-16 pb-12">
+<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+<!-- Top Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-14 border-b border-editorial-borderDark">
+<!-- Left: Brand Info & Wordmark -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3.5 mb-4 group cursor-pointer inline-flex">
+<div class="w-9 h-9 rounded-md bg-white/10 flex items-center justify-center text-white transition-all duration-300 group-hover:bg-brand/40 group-hover:scale-105">
+<svg class="w-5 h-5" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 3V21M3 12H21" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path>
+<circle cx="12" cy="12" fill="currentColor" r="3"></circle>
+<circle cx="6" cy="6" fill="currentColor" r="1.5"></circle>
+<circle cx="18" cy="18" fill="currentColor" r="1.5"></circle>
+</svg>
+</div>
+<span class="font-display font-extrabold text-2xl tracking-tight text-white transition-colors duration-200 group-hover:text-emerald-300">AI Mitra</span>
+</div>
+<p class="font-display text-base font-semibold text-emerald-300/90 mb-3">Explore AI Together.</p>
+<p class="text-sm text-gray-300 max-w-sm leading-relaxed font-normal">
+              A student-led initiative making Artificial Intelligence easier to understand and use responsibly.
+            </p>
+</div>
+</div>
+<!-- Col 2: Explore Navigation -->
+<div class="lg:col-span-3">
+<h4 class="font-display text-xs font-bold uppercase tracking-wider text-emerald-400 mb-4">Explore</h4>
+<ul class="space-y-2.5 text-sm text-gray-300">
+<li class=""><a class="group inline-flex items-center gap-1.5 hover:text-white transition-colors duration-200" href="learn_ai.html"><span class="opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 -translate-x-1 transition-all text-emerald-400">→</span>Learn AI</a></li>
+<li class=""><a class="group inline-flex items-center gap-1.5 hover:text-white transition-colors duration-200" href="ai_in_real_life.html"><span class="opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 -translate-x-1 transition-all text-emerald-400">→</span>AI in Real Life</a></li>
+<li class=""></li>
+<li class=""><a class="group inline-flex items-center gap-1.5 hover:text-white transition-colors duration-200" href="resource.html"><span class="opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 -translate-x-1 transition-all text-emerald-400">→</span>Free Resources</a></li>
+</ul>
+</div>
+<!-- Col 3: AI Mitra Organization -->
+<div class="lg:col-span-2">
+<h4 class="font-display text-xs font-bold uppercase tracking-wider text-emerald-400 mb-4">AI Mitra</h4>
+<ul class="space-y-2.5 text-sm text-gray-300">
+<li class=""><a class="group inline-flex items-center gap-1.5 hover:text-white transition-colors duration-200" href="about.html"><span class="opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 -translate-x-1 transition-all text-emerald-400">→</span>About</a></li>
+<li class=""><a class="group inline-flex items-center gap-1.5 hover:text-white transition-colors duration-200" href="#workshops"><span class="opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 -translate-x-1 transition-all text-emerald-400">→</span>Our Workshops</a></li>
+<li class=""><a class="group inline-flex items-center gap-1.5 hover:text-white transition-colors duration-200" href="mailto:contact@aimitra.org"><span class="opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 -translate-x-1 transition-all text-emerald-400">→</span>Contact</a></li>
+<li class=""><a class="group inline-flex items-center gap-1.5 hover:text-white transition-colors duration-200" href="#"><span class="opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 -translate-x-1 transition-all text-emerald-400">→</span>Get Involved</a></li>
+</ul>
+</div>
+<!-- Col 4: Community & Social Links with magnetic float & hover glow -->
+<div class="lg:col-span-2">
+<h4 class="font-display text-xs font-bold uppercase tracking-wider text-emerald-400 mb-4">Follow</h4>
+<div class="flex items-center gap-3">
+<a aria-label="Instagram" class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:bg-emerald-600/30 hover:scale-110 hover:-translate-y-0.5 transition-all duration-300 border border-white/5" href="#">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a aria-label="YouTube" class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:bg-emerald-600/30 hover:scale-110 hover:-translate-y-0.5 transition-all duration-300 border border-white/5" href="#">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+</a>
+<a aria-label="GitHub" class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:bg-emerald-600/30 hover:scale-110 hover:-translate-y-0.5 transition-all duration-300 border border-white/5" href="#">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Bottom Bar: Legal & Attribution -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
+<p class="">© 2025 AI Mitra. All rights reserved. Non-commercial educational initiative.</p>
+<div class="flex items-center space-x-6">
+<a class="hover:text-emerald-300 transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="hover:text-emerald-300 transition-colors duration-200" href="#">Terms of Use</a>
+<a class="hover:text-emerald-300 transition-colors duration-200" href="#">Code of Ethics</a>
+</div>
+</div>
+</div>
+</footer>
+<div aria-labelledby="schoolInviteFormTitle" aria-modal="true" class="aimitra-form-modal" hidden="" id="schoolInviteFormModal" role="dialog">
+<button aria-label="Close school invitation form" class="aimitra-form-backdrop" data-school-form-close="" type="button"></button>
+<section class="aimitra-form-dialog">
+<div class="aimitra-form-heading">
+<div>
+<p class="aimitra-form-eyebrow">School workshops</p>
+<h2 id="schoolInviteFormTitle">Invite AI Mitra to Your School</h2>
+<p>Share your school's details and preferred workshop dates through our school invitation form.</p>
+</div>
+<button aria-label="Close" class="aimitra-form-close" data-school-form-close="" type="button">×</button>
+</div>
+<p class="aimitra-form-notice" id="schoolInviteFormNotice">The Google Form has not been connected yet. Add your published Google Forms URL in <code>js/site-config.js</code> to activate this form.</p>
+<iframe class="aimitra-google-form" hidden="" id="schoolInviteFormFrame" loading="lazy" title="AI Mitra school workshop invitation form"></iframe>
+<div class="aimitra-form-footer">
+<a class="aimitra-form-open-link" hidden="" href="#" id="schoolInviteOpenForm" rel="noopener" target="_blank">Open form in a new tab</a>
+<button class="aimitra-form-dismiss" data-school-form-close="" type="button">Close</button>
+</div>
+</section>
+</div>
+<!-- Script for lightweight mobile drawer toggle & smooth scrolling -->
+<script>function triggerLearnAINavigation(event){if(event){event.preventDefault();}var overlay=document.getElementById('portalTransitionOverlay');var content=document.getElementById('portalModalContent');if(!overlay) return;overlay.classList.remove('pointer-events-none','opacity-0');overlay.classList.add('opacity-100');if(content){content.classList.remove('scale-95');content.classList.add('scale-100');}setTimeout(function(){window.location.href='learn_ai.html';},550);}</script>
+<script src="js/site-config.js"></script><script src="js/site-navigation.js"></script></body></html>

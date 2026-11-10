@@ -1,0 +1,158 @@
+/* AI Mitra shared navigation and small UI additions.
+   Keep this file as the single place to adjust the shared header on every page. */
+.aimitra-site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.96);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid #E8EAE6;
+  box-shadow: 0 1px 8px rgba(23, 45, 38, 0.025);
+}
+.aimitra-header-inner {
+  width: min(100% - 3rem, 1280px);
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.aimitra-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.875rem;
+  min-width: max-content;
+  color: #17231D;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 4px;
+  transition: transform 180ms ease;
+}
+.aimitra-brand:hover { transform: translateY(-1px); }
+.aimitra-brand-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #176B50;
+  background: #F5F4EF;
+  border: 1px solid #E8EAE6;
+  flex: 0 0 auto;
+}
+.aimitra-brand-mark svg { width: 24px; height: 24px; }
+.aimitra-brand-copy { display: flex; flex-direction: column; }
+.aimitra-brand-copy strong {
+  color: #17231D;
+  font-family: "Plus Jakarta Sans", Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+.aimitra-brand-copy small {
+  margin-top: 3px;
+  color: #606A64;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.aimitra-nav-links { display: flex; align-items: center; gap: 2rem; }
+.aimitra-nav-links a,
+.aimitra-mobile-menu a {
+  color: #606A64;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+.aimitra-nav-links a:hover,
+.aimitra-mobile-menu a:hover { color: #176B50; }
+.aimitra-nav-actions { display: flex; align-items: center; gap: 1rem; }
+.aimitra-start-learning,
+.aimitra-mobile-start {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0.65rem 1.25rem;
+  border: 0;
+  border-radius: 6px;
+  color: #fff !important;
+  background: #176B50;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+.aimitra-start-learning:hover,
+.aimitra-mobile-start:hover { color: #fff; background: #12543e; transform: translateY(-1px); box-shadow: 0 6px 16px rgba(23,107,80,.16); }
+.aimitra-menu-toggle { display: none; width: 40px; height: 40px; padding: 8px; color: #606A64; background: transparent; border: 0; border-radius: 6px; cursor: pointer; }
+.aimitra-menu-toggle:hover { color: #17231D; background: #F5F4EF; }
+.aimitra-menu-toggle svg { width: 24px; height: 24px; }
+.aimitra-menu-close { display: none; }
+.aimitra-menu-toggle[aria-expanded="true"] .aimitra-menu-open { display: none; }
+.aimitra-menu-toggle[aria-expanded="true"] .aimitra-menu-close { display: block; }
+.aimitra-mobile-menu { display: none; border-top: 1px solid #E8EAE6; background: #fff; padding: 12px 24px 22px; }
+.aimitra-mobile-menu[hidden] { display: none !important; }
+.aimitra-mobile-menu nav { display: flex; flex-direction: column; gap: 0.25rem; max-width: 1280px; margin: 0 auto; }
+.aimitra-mobile-menu nav a { display: block; padding: 10px 0; font-size: 15px; }
+.aimitra-mobile-menu .aimitra-mobile-start { margin-top: 8px; padding: 12px 16px; color: #fff !important; text-align: center; }
+/* The common header is sticky now, so remove the old fixed-header spacer on inner pages. */
+.aimitra-site-header + main { padding-top: 0 !important; }
+
+/* School invitation Google Form dialog */
+.aimitra-form-modal[hidden] { display: none !important; }
+.aimitra-form-modal:not([hidden]) { position: fixed; inset: 0; z-index: 1200; display: flex; align-items: center; justify-content: center; padding: 18px; }
+.aimitra-form-backdrop { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: rgba(13, 28, 22, .62); cursor: pointer; }
+.aimitra-form-dialog { position: relative; z-index: 1; width: min(100%, 900px); max-height: min(92vh, 900px); overflow: auto; padding: 24px; border-radius: 14px; background: #fff; box-shadow: 0 24px 80px rgba(0,0,0,.24); }
+.aimitra-form-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; margin-bottom: 18px; }
+.aimitra-form-eyebrow { margin: 0 0 6px; color: #176B50; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.aimitra-form-heading h2 { margin: 0 0 8px; color: #17231D; font-family: "Plus Jakarta Sans", Inter, sans-serif; font-size: clamp(22px, 3vw, 30px); font-weight: 800; }
+.aimitra-form-heading p { margin: 0; color: #606A64; line-height: 1.6; }
+.aimitra-form-close { width: 36px; height: 36px; flex: 0 0 auto; border: 0; border-radius: 8px; background: #F5F4EF; color: #17231D; font-size: 26px; cursor: pointer; }
+.aimitra-form-notice { padding: 16px; border: 1px solid #E8EAE6; border-radius: 8px; color: #606A64; background: #F9FAF8; line-height: 1.6; }
+.aimitra-google-form { display: block; width: 100%; height: min(68vh, 680px); border: 0; }
+.aimitra-form-footer { display: flex; align-items: center; justify-content: flex-end; gap: 12px; padding-top: 16px; }
+.aimitra-form-open-link { color: #176B50; font-weight: 700; text-decoration: underline; }
+.aimitra-form-dismiss { padding: 9px 18px; color: #17231D; border: 1px solid #E8EAE6; border-radius: 6px; background: #fff; font-weight: 600; cursor: pointer; }
+
+/* PDF preview area on the Resources page */
+.pdf-preview-panel[hidden], .pdf-preview-panel.hidden { display: none !important; }
+.pdf-preview-panel { margin-top: 18px; padding: 18px; border: 1px solid #DDE5DF; border-radius: 12px; background: #fff; }
+.pdf-preview-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 14px; }
+.pdf-preview-heading h4 { margin: 0 0 4px; color: #17231D; font-size: 17px; font-weight: 700; }
+.pdf-preview-heading p { margin: 0; color: #606A64; font-size: 13px; line-height: 1.5; }
+.pdf-preview-close { padding: 8px 12px; color: #42534A; border: 1px solid #DDE5DF; border-radius: 7px; background: #fff; font-size: 12px; font-weight: 700; cursor: pointer; white-space: nowrap; }
+.pdf-preview-frame { display: block; width: 100%; height: min(72vh, 720px); min-height: 440px; border: 1px solid #E8EAE6; border-radius: 8px; background: #F5F4EF; }
+.pdf-preview-download-row { display: flex; justify-content: flex-end; padding-top: 14px; }
+.pdf-download-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; color: #fff; border-radius: 7px; background: #176B50; font-size: 13px; font-weight: 700; text-decoration: none; }
+.pdf-download-button:hover { color: #fff; background: #12543e; }
+.pdf-download-button .material-symbols-outlined { font-size: 18px; }
+@media (max-width: 900px) {
+  .aimitra-header-inner { width: min(100% - 2.5rem, 1280px); }
+  .aimitra-nav-links { gap: 1.2rem; }
+}
+@media (max-width: 767px) {
+  .aimitra-header-inner { width: calc(100% - 2rem); height: 72px; }
+  .aimitra-nav-links { display: none; }
+  .aimitra-start-learning { display: none; }
+  .aimitra-menu-toggle { display: inline-flex; align-items: center; justify-content: center; }
+  .aimitra-mobile-menu:not([hidden]) { display: block; }
+  .aimitra-form-dialog { padding: 18px; }
+  .pdf-preview-heading { flex-direction: column; }
+  .pdf-preview-frame { min-height: 360px; height: 65vh; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .aimitra-site-header *, .aimitra-site-header { transition-duration: .01ms !important; }
+}

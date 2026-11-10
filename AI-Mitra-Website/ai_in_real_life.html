@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>AI Mitra — Civic AI Literacy Initiative</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary":"#00513b","error":"#ba1a1a","tertiary":"#753400","surface-tint":"#176b50","on-error":"#ffffff","on-error-container":"#93000a","secondary-fixed":"#cfe8dd","on-background":"#121e18","surface-container-high":"#ddece2","surface-container-highest":"#d8e6dc","primary-fixed":"#a4f3d0","inverse-primary":"#89d6b5","on-tertiary-container":"#ffcfb5","inverse-surface":"#27332d","surface-dim":"#cfddd4","on-secondary":"#ffffff","primary-fixed-dim":"#89d6b5","on-surface-variant":"#3f4944","surface-variant":"#d8e6dc","on-tertiary":"#ffffff","secondary-fixed-dim":"#b3ccc2","on-secondary-fixed":"#091f19","on-surface":"#121e18","primary-container":"#176b50","outline-variant":"#bec9c2","on-tertiary-fixed":"#321200","error-container":"#ffdad6","surface-container-lowest":"#ffffff","on-primary":"#ffffff","on-primary-container":"#9be9c6","tertiary-container":"#994703","surface":"#effdf3","inverse-on-surface":"#e6f4ea","secondary":"#4c635b","on-secondary-container":"#50675f","on-secondary-fixed-variant":"#354b43","outline":"#6f7973","surface-container-low":"#e9f7ed","on-primary-fixed-variant":"#00513b","on-tertiary-fixed-variant":"#753400","surface-container":"#e3f1e7","secondary-container":"#cce5da","tertiary-fixed-dim":"#ffb68c","background":"#effdf3","on-primary-fixed":"#002116","surface-bright":"#effdf3","tertiary-fixed":"#ffdbc9"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-sm":"0.5rem","space-xs":"0.25rem","margin":"3rem","space-lg":"1.5rem","space-3xl":"6rem","gutter":"1.5rem","space-2xl":"4rem","margin-mobile":"1.25rem","margin-tablet":"2rem","gutter-mobile":"1rem","space-md":"1rem","space-xl":"2.5rem"},fontFamily:{"display":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-lg":["DM Sans"],"body-lg":["Inter"],"display-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-md":["Inter"],"label-sm":["DM Sans"],"label-md":["DM Sans"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"display":["3.5rem",{"lineHeight":"4rem","letterSpacing":"-0.03em","fontWeight":"700"}],"headline-lg":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["0.875rem",{"lineHeight":"1.375rem","letterSpacing":"0","fontWeight":"400"}],"label-lg":["0.9375rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"500"}],"body-lg":["1.125rem",{"lineHeight":"1.875rem","letterSpacing":"-0.005em","fontWeight":"400"}],"display-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-md":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.015em","fontWeight":"600"}],"body-md":["1rem",{"lineHeight":"1.625rem","letterSpacing":"0","fontWeight":"400"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.06em","fontWeight":"600"}],"label-md":["0.8125rem",{"lineHeight":"1rem","letterSpacing":"0.03em","fontWeight":"600"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script><link href="css/site-navigation.css" rel="stylesheet"/></head><body class="bg-[#FFFFFF] font-body-md text-[#17231D] antialiased selection:bg-[#176B50]/20 selection:text-[#176B50]"><header class="aimitra-site-header">
+<div class="aimitra-header-inner">
+<a aria-label="AI Mitra home" class="aimitra-brand" href="index.html">
+<span aria-hidden="true" class="aimitra-brand-mark">
+<svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 3V21M3 12H21" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path>
+<circle cx="12" cy="12" fill="currentColor" r="3"></circle>
+<circle cx="6" cy="6" fill="currentColor" r="1.5"></circle>
+<circle cx="18" cy="18" fill="currentColor" r="1.5"></circle>
+</svg>
+</span>
+<span class="aimitra-brand-copy">
+<strong>AI Mitra</strong>
+<small>Explore AI Together</small>
+</span>
+</a>
+<nav aria-label="Main navigation" class="aimitra-nav-links">
+<a href="index.html">Home</a>
+<a href="learn_ai.html">Learn AI</a>
+<a href="ai_in_real_life.html">AI in Real Life</a>
+<a href="resource.html">Resources</a>
+<a href="about.html">About</a>
+</nav>
+<div class="aimitra-nav-actions">
+<a class="aimitra-start-learning" href="learn_ai.html">Start Learning</a>
+<button aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation" class="aimitra-menu-toggle" id="mobileMenuBtn" type="button">
+<svg aria-hidden="true" class="aimitra-menu-open" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-width="2"></path></svg>
+<svg aria-hidden="true" class="aimitra-menu-close" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+<div class="aimitra-mobile-menu" hidden="" id="mobileMenu">
+<nav aria-label="Mobile navigation">
+<a href="index.html">Home</a>
+<a href="learn_ai.html">Learn AI</a>
+<a href="ai_in_real_life.html">AI in Real Life</a>
+<a href="resource.html">Resources</a>
+<a href="about.html">About</a>
+<a class="aimitra-mobile-start" href="learn_ai.html">Start Learning</a>
+</nav>
+</div>
+</header><main class="w-full pt-20 bg-[#FFFFFF] min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Top Category Ribbon & Hero Header -->
+<section class="w-full bg-surface-container-low py-space-xl md:py-space-2xl px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="max-w-7xl mx-auto flex flex-col items-start gap-space-lg">
+<div class="inline-flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-highest text-primary">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Civic Knowledge · Classes 8–10</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-space-xl items-center w-full">
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<h1 class="font-display text-display font-bold text-on-surface tracking-tight leading-none">
+            AI in Real Life
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Artificial Intelligence is not limited to chatbots or futuristic robots. It is already helping students learn, creators express ideas, doctors understand medical information, farmers make better decisions, and organisations protect digital systems.
+          </p>
+<p class="font-body-md text-body-md text-secondary leading-relaxed max-w-xl">
+            Explore how AI is becoming part of our everyday lives and how it is quietly changing the way we learn, work, and solve community challenges across India.
+          </p>
+<!-- Jump Links Bar -->
+<div class="pt-space-sm flex flex-wrap items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<span class="font-semibold text-primary uppercase text-label-sm tracking-wider mr-1">Jump to:</span>
+<a class="px-3 py-1.5 rounded-lg bg-surface-container-highest hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors" href="#learning-creativity">AI for Learning</a>
+<a class="px-3 py-1.5 rounded-lg bg-surface-container-highest hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors" href="#ai-around-us">AI Around Us</a>
+<a class="px-3 py-1.5 rounded-lg bg-surface-container-highest hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors" href="#cybersecurity-safety">Cybersecurity &amp; Safety</a>
+<a class="px-3 py-1.5 rounded-lg bg-surface-container-highest hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors" href="#stay-curious">Stay Curious</a>
+</div>
+</div>
+<!-- Abstract Connected Civic Systems Diagram (No Sci-Fi clichés) -->
+<div class="lg:col-span-5 w-full flex justify-center">
+<div class="w-full max-w-md p-space-lg rounded-xl bg-surface-container shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Civic Network Map</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">5 Core Domains</span>
+</div>
+<!-- Inline Pure SVG Diagram -->
+<svg class="w-full h-56 text-primary" fill="none" viewbox="0 0 360 220" xmlns="http://www.w3.org/2000/svg">
+<!-- Connector Lines -->
+<path d="M180 110 L70 45" stroke="currentColor" stroke-dasharray="4 4" stroke-opacity="0.3" stroke-width="2"></path>
+<path d="M180 110 L290 45" stroke="currentColor" stroke-dasharray="4 4" stroke-opacity="0.3" stroke-width="2"></path>
+<path d="M180 110 L50 165" stroke="currentColor" stroke-dasharray="4 4" stroke-opacity="0.3" stroke-width="2"></path>
+<path d="M180 110 L310 165" stroke="currentColor" stroke-dasharray="4 4" stroke-opacity="0.3" stroke-width="2"></path>
+<path d="M180 110 L180 195" stroke="currentColor" stroke-dasharray="4 4" stroke-opacity="0.3" stroke-width="2"></path>
+<!-- Center Hub -->
+<circle cx="180" cy="110" fill="#176b50" r="32"></circle>
+<text fill="#ffffff" font-family="Plus Jakarta Sans" font-size="11" font-weight="700" text-anchor="middle" x="180" y="107">CIVIC AI</text>
+<text fill="#a4f3d0" font-family="Inter" font-size="8.5" text-anchor="middle" x="180" y="122">FOUNDATION</text>
+<!-- Node 1: Classroom Learning -->
+<circle cx="70" cy="45" fill="#ddece2" r="24"></circle>
+<text fill="#00513b" font-family="DM Sans" font-size="9" font-weight="600" text-anchor="middle" x="70" y="44">School</text>
+<text fill="#4c635b" font-family="Inter" font-size="7.5" text-anchor="middle" x="70" y="55">Learning</text>
+<!-- Node 2: Healthcare -->
+<circle cx="290" cy="45" fill="#ddece2" r="24"></circle>
+<text fill="#00513b" font-family="DM Sans" font-size="9" font-weight="600" text-anchor="middle" x="290" y="44">Health</text>
+<text fill="#4c635b" font-family="Inter" font-size="7.5" text-anchor="middle" x="290" y="55">Diagnostics</text>
+<!-- Node 3: Agriculture -->
+<circle cx="50" cy="165" fill="#ddece2" r="24"></circle>
+<text fill="#00513b" font-family="DM Sans" font-size="9" font-weight="600" text-anchor="middle" x="50" y="164">Agri</text>
+<text fill="#4c635b" font-family="Inter" font-size="7.5" text-anchor="middle" x="50" y="175">Soil &amp; Weather</text>
+<!-- Node 4: Cybersecurity -->
+<circle cx="310" cy="165" fill="#ddece2" r="24"></circle>
+<text fill="#00513b" font-family="DM Sans" font-size="9" font-weight="600" text-anchor="middle" x="310" y="164">Security</text>
+<text fill="#4c635b" font-family="Inter" font-size="7.5" text-anchor="middle" x="310" y="175">Integrity</text>
+<!-- Node 5: Public Governance -->
+<circle cx="180" cy="195" fill="#cfe8dd" r="20"></circle>
+<text fill="#00513b" font-family="DM Sans" font-size="8" font-weight="600" text-anchor="middle" x="180" y="198">Civic Services</text>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Section: Field Photography Integration -->
+<!-- SECTION 1: AI FOR LEARNING & CREATIVITY -->
+<section class="w-full py-space-2xl px-margin-mobile md:px-margin-tablet lg:px-margin scroll-mt-24" id="learning-creativity">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">school</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-bold">Module 01</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">
+          AI for Learning &amp; Creativity
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          AI can become a helpful learning and creative partner. From understanding difficult school subjects to creating digital content, it gives students new ways to explore their ideas.
+        </p>
+</div>
+<!-- 4 Editorial Grid Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- 1A: Smarter Learning -->
+<div class="p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Concept 01</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">psychology_alt</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Smarter Learning</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Struggling with a difficult topic? AI can explain the same concept in simpler words, provide relatable analogies, summarise extensive notes, and help you practise questions.
+            </p>
+<div class="mt-space-xs pt-space-xs flex flex-col gap-1.5 font-body-sm text-body-sm text-secondary">
+<span class="font-semibold text-on-surface text-label-sm uppercase">Curricular Examples:</span>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="">Explaining photosynthesis or mitosis using step-by-step analogies.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="">Converting dense history textbook notes into revision flash-points.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="">Generating custom quadratic or linear equation practice sets with hints.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="">Explaining vocabulary terms within Indian cultural contexts.</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest p-space-sm rounded-lg text-label-sm text-secondary font-medium">
+            💡 <strong class="text-on-surface">Student Tip:</strong> Tell the AI: "Explain Newton's third law of motion as if I am 12 years old, using a cricket ball example."
+          </div>
+</div>
+<!-- 1B: Creative Content -->
+<div class="p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Concept 02</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">palette</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Creative Content &amp; Digital Creation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              AI helps students turn abstract thoughts into creative digital projects. It assists with brainstorming project angles, generating charts, video planning, and editorial drafting.
+            </p>
+<div class="mt-space-xs pt-space-xs flex flex-col gap-1.5 font-body-sm text-body-sm text-secondary">
+<span class="font-semibold text-on-surface text-label-sm uppercase">Curricular Examples:</span>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="">Creating concept diagrams for a school science exhibition chart.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="">Brainstorming unique angles for an essay on water conservation.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="">Structuring concise slide layouts for social studies presentations.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="">Writing scripts and storyboards for educational club skits or podcasts.</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest p-space-sm rounded-lg text-label-sm text-secondary font-medium">
+            🎨 <strong class="text-on-surface">Originality Rule:</strong> Use AI to brainstorm 5 starting angles; then write your project completely in your own authentic voice.
+          </div>
+</div>
+<!-- 1C: Research & Exploration -->
+<div class="p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Concept 03</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">travel_explore</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Research &amp; Exploration</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              AI can help students explore unfamiliar subjects, organise information, and discover new perspectives. However, important facts must always be cross-checked with verified textbooks or encyclopedias.
+            </p>
+<div class="mt-space-xs pt-space-xs flex flex-col gap-1.5 font-body-sm text-body-sm text-secondary">
+<span class="font-semibold text-on-surface text-label-sm uppercase">Curricular Examples:</span>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="">Tracing ISRO space exploration milestones (Chandrayaan, Gaganyaan).</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="">Comparing solar, wind, and nuclear energy efficiency tradeoffs.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="">Building historical timelines of the Indian independence movement.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="">Formulating scientific test hypotheses for environmental science projects.</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest p-space-sm rounded-lg text-label-sm text-secondary font-medium">
+            🔍 <strong class="text-on-surface">Verification Rule:</strong> Always check numbers, historical dates, and scientific claims in NCERT or official publications.
+          </div>
+</div>
+<!-- 1D: Learning New Skills -->
+<div class="p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Concept 04</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Learning New Skills</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Students can use AI to practise skills beyond regular school syllabus—from foundational Python programming and public speaking to logic games and visual design.
+            </p>
+<div class="mt-space-xs pt-space-xs flex flex-col gap-1.5 font-body-sm text-body-sm text-secondary">
+<span class="font-semibold text-on-surface text-label-sm uppercase">Curricular Examples:</span>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="">Practising simple Python loops or debugging HTML/CSS layout tags.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="">Interactive conversational roleplay to build English speaking confidence.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="">Simulating tough questions an audience might ask during a school debate.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="">Understanding basic digital circuit logic and truth tables.</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest p-space-sm rounded-lg text-label-sm text-secondary font-medium">
+            🚀 <strong class="text-on-surface">Self-Paced:</strong> AI adjusts to your pace—ask it to explain something five different ways until it clicks!
+          </div>
+</div>
+</div>
+<!-- Crucial Callout Banner: Civic Principle -->
+<div class="w-full p-space-lg rounded-xl bg-primary text-on-primary flex flex-col md:flex-row items-center gap-space-lg shadow-md">
+<div class="w-12 h-12 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">lightbulb</span>
+</div>
+<div class="flex flex-col gap-1 text-center md:text-left">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed font-bold">The Core Civic Principle for Indian Students</span>
+<p class="font-headline-sm text-headline-sm font-semibold text-on-primary leading-snug">
+            "Use AI to understand more, not to avoid thinking. Your curiosity and creativity matter more than simply copying an AI-generated answer."
+          </p>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">
+            When you solve a math problem yourself or draft your own story, your brain builds critical neural pathways that no machine can replace.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: AI IN EVERYDAY LIFE (AI AROUND US) -->
+<section class="w-full py-space-2xl px-margin-mobile md:px-margin-tablet lg:px-margin bg-surface-container-low scroll-mt-24" id="ai-around-us">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">public</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-bold">Module 02</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">
+          AI Around Us
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          AI quietly works behind many services we use every day. Sometimes we interact with it directly on our phones, and sometimes it works behind the scenes in public infrastructure without us noticing.
+        </p>
+</div>
+<!-- 6 Balanced Domain Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- 1. Healthcare -->
+<div class="p-space-lg rounded-xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">medical_services</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Healthcare</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              AI helps medical professionals examine health data, analyse chest X-rays and retinal scans, and spot early signs of diseases.
+            </p>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col gap-1 text-secondary font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface text-label-sm">Real Applications:</span>
+<span class="">• Spotting diabetic retinopathy from eye images in rural clinics.</span>
+<span class="">• Assisting radiologists with fast tuberculosis scan triaging.</span>
+<span class="">• Managing patient queues in government district hospitals.</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="">Supports doctors, never replaces them</span>
+</div>
+</div>
+<!-- 2. Agriculture -->
+<div class="p-space-lg rounded-xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">agriculture</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Agriculture</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              AI helps Indian farmers inspect crop conditions, predict pest attacks, and schedule precise drip irrigation using smartphone cameras and soil sensors.
+            </p>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col gap-1 text-secondary font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface text-label-sm">Real Applications:</span>
+<span class="">• Identifying leaf blight diseases by snapping a photo of the crop.</span>
+<span class="">• Optimizing fertilizer amounts to avoid ground soil degradation.</span>
+<span class="">• Forecasting micro-climate rainfall at the taluk or village level.</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">eco</span>
+<span class="">Empowering sustainable farming yields</span>
+</div>
+</div>
+<!-- 3. Finance & Banking -->
+<div class="p-space-lg rounded-xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">account_balance</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Finance &amp; Banking</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Banks and UPI applications employ machine learning to analyse millions of transactions per second, identifying abnormal card swipes and blocking financial fraud.
+            </p>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col gap-1 text-secondary font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface text-label-sm">Real Applications:</span>
+<span class="">• Instant UPI payment security alerts on unusual transactions.</span>
+<span class="">• Multilingual voice assistance for bank account inquiries in Hindi, Tamil, Bengali, etc.</span>
+<span class="">• Spotting fraudulent automated identity impersonation.</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span class="">Protecting everyday digital wallets</span>
+</div>
+</div>
+<!-- 4. Transportation & Navigation -->
+<div class="p-space-lg rounded-xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">navigation</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Navigation &amp; Transit</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Map and navigation services calculate real-time road congestion, optimize city bus networks, and predict exact train arrival timings.
+            </p>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col gap-1 text-secondary font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface text-label-sm">Real Applications:</span>
+<span class="">• Dynamically re-routing school buses away from waterlogged streets.</span>
+<span class="">• Real-time metro and Indian Railways live status prediction.</span>
+<span class="">• Smart traffic light timers that adjust green lights based on car density.</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">commute</span>
+<span class="">Reducing travel hours &amp; fuel emissions</span>
+</div>
+</div>
+<!-- 5. Shopping & Entertainment -->
+<div class="p-space-lg rounded-xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">smart_display</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Shopping &amp; Media</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Video streaming, music apps, and shopping portals analyse your viewing or purchase patterns to recommend what you might want to watch or listen to next.
+            </p>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col gap-1 text-secondary font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface text-label-sm">Real Applications:</span>
+<span class="">• Educational YouTube channel recommendations based on watched science videos.</span>
+<span class="">• Regional language playlists tailored to your favorite singers.</span>
+<span class="">• Autocomplete book queries on library and bookstore portals.</span>
+</div>
+</div>
+<!-- Reminder Badge -->
+<div class="mt-space-md p-space-xs rounded-lg bg-surface-container-highest text-label-sm text-tertiary-container font-medium flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary shrink-0 mt-0.5">info</span>
+<span class=""><strong>Remember:</strong> Algorithms suggest what keeps you scrolling, not always what is healthiest for your learning.</span>
+</div>
+</div>
+<!-- 6. Environment & Weather -->
+<div class="p-space-lg rounded-xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">thunderstorm</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Environment &amp; Weather</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Meteorologists and climate scientists process massive satellite datasets using machine learning to track cyclones, monitor air quality, and predict floods.
+            </p>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col gap-1 text-secondary font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface text-label-sm">Real Applications:</span>
+<span class="">• Tracking Bay of Bengal and Arabian Sea cyclone paths accurately.</span>
+<span class="">• Urban Air Quality Index (AQI) forecasts in Delhi, Mumbai, and Bengaluru.</span>
+<span class="">• River basin overflow modeling during heavy monsoon downpours.</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">water_drop</span>
+<span class="">Early warnings save community lives</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: AI, CYBERSECURITY & DIGITAL SAFETY -->
+<section class="w-full py-space-3xl px-margin-mobile md:px-margin-tablet lg:px-margin scroll-mt-24" id="cybersecurity-safety">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-bold">Module 03</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">
+          AI, Cybersecurity &amp; Digital Safety
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          Artificial Intelligence can help protect digital systems, but it can also be misused by people with harmful intentions. Understanding both sides helps every student become a vigilant and secure digital citizen.
+        </p>
+</div>
+<!-- Two-Column Editorial Comparison -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-xl">
+<!-- Protective Column (Emerald/Green Accent) -->
+<div class="flex flex-col gap-space-md p-space-lg rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-xs text-primary pb-space-xs">
+<span class="material-symbols-outlined text-[24px]">security</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">How AI Helps Protect Us</h3>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+            Modern cybersecurity teams deploy machine learning models to defend servers, school portals, and digital public infrastructure around the clock.
+          </p>
+<div class="flex flex-col gap-space-sm mt-space-xs">
+<!-- Item 1 -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex flex-col gap-1">
+<div class="flex items-center gap-2 text-primary font-semibold font-headline-sm text-[16px]">
+<span class="material-symbols-outlined text-[18px]">radar</span>
+<h4 class="">1. Detecting Cyber Attacks Early</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Security systems look at network data to spot weird activity, like someone trying hundreds of passwords at once, and block them before damage happens.
+              </p>
+</div>
+<!-- Item 2 -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex flex-col gap-1">
+<div class="flex items-center gap-2 text-primary font-semibold font-headline-sm text-[16px]">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<h4 class="">2. Detecting Online Fraud</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Banks use AI to spot strange shopping transactions or sudden password resets from unknown devices, immediately pausing the account to protect your money.
+              </p>
+</div>
+<!-- Item 3 -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex flex-col gap-1">
+<div class="flex items-center gap-2 text-primary font-semibold font-headline-sm text-[16px]">
+<span class="material-symbols-outlined text-[18px]">mark_email_read</span>
+<h4 class="">3. Email &amp; Spam Protection</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Spam filters inspect millions of incoming emails every second, recognizing deceptive senders, fake login links, and virus attachments so they never reach your inbox.
+              </p>
+</div>
+</div>
+</div>
+<!-- Misuse Column (Alert / Tertiary Accent) -->
+<div class="flex flex-col gap-space-md p-space-lg rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-xs text-tertiary pb-space-xs">
+<span class="material-symbols-outlined text-[24px]">warning</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-tertiary">How AI Can Be Misused</h3>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+            Understanding the risks of synthetic media and scams prepares students to spot misleading information without fear.
+          </p>
+<div class="flex flex-col gap-space-sm mt-space-xs">
+<!-- Item 1 -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex flex-col gap-1">
+<div class="flex items-center gap-2 text-tertiary font-semibold font-headline-sm text-[16px]">
+<span class="material-symbols-outlined text-[18px]">face</span>
+<h4 class="">1. Deepfakes &amp; Voice Cloning</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Special software can make realistic fake videos or clone someone's voice using just a 10-second audio clip, tricking people into believing statements that never occurred.
+              </p>
+</div>
+<!-- Item 2 -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex flex-col gap-1">
+<div class="flex items-center gap-2 text-tertiary font-semibold font-headline-sm text-[16px]">
+<span class="material-symbols-outlined text-[18px]">phishing</span>
+<h4 class="">2. AI-Powered Scams &amp; Phishing</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Scammers can use AI to write convincing, error-free fake messages claiming you won a scholarship or that your school fee is overdue, aiming to steal account credentials.
+              </p>
+</div>
+<!-- Item 3 -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex flex-col gap-1">
+<div class="flex items-center gap-2 text-tertiary font-semibold font-headline-sm text-[16px]">
+<span class="material-symbols-outlined text-[18px]">robot_2</span>
+<h4 class="">3. Automated Digital Attacks</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Malicious actors try to automate attacks to discover unprotected web servers or guess weak default passwords across public Wi-Fi networks.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- THINK BEFORE YOU TRUST: Interactive Checklist Box -->
+<div class="p-space-xl rounded-xl bg-surface-container-highest flex flex-col gap-space-lg shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div>
+<div class="inline-flex items-center gap-1 text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-[16px]">fact_check</span>
+<span class="">Student Safety Playbook</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mt-1">
+              Think Before You Trust
+            </h3>
+<p class="font-body-sm text-body-sm text-secondary">
+              5 essential digital habits for students when interacting with unknown digital media or messages:
+            </p>
+</div>
+
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Check 1 -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-sm shrink-0">1</div>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">Verify Unexpected Messages</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+                If an urgent message claims a school emergency or prize, verify it directly with your school office or parents.
+              </p>
+</div>
+</div>
+<!-- Check 2 -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-sm shrink-0">2</div>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">Never Share OTPs or Passwords</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+                Real banks, teachers, and website admins will never ask you for your login password or phone verification code.
+              </p>
+</div>
+</div>
+<!-- Check 3 -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-sm shrink-0">3</div>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">Inspect Web URLs Carefully</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+                Fake links often misspell words slightly (like "goog1e" or "gov-india-login.xyz"). Always look closely at the domain name.
+              </p>
+</div>
+</div>
+<!-- Check 4 -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-sm shrink-0">4</div>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">Look for Deepfake Clues</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+                Synthetic video faces often exhibit weird eye blinks, unnatural teeth alignment, blurry earlobes, or robotic voice pauses.
+              </p>
+</div>
+</div>
+<!-- Check 5 -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex items-start gap-space-sm md:col-span-2">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-sm shrink-0">5</div>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">Talk to a Trusted Adult</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+                If someone asks you for private pictures, sends threatening notes, or tries to pressure you online, immediately alert a parent, teacher, or trusted school counselor.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: STAY CURIOUS. STAY UPDATED. -->
+<section class="w-full py-space-3xl px-margin-mobile md:px-margin-tablet lg:px-margin bg-surface-container-low scroll-mt-24" id="stay-curious">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<div class="flex flex-col items-center text-center gap-space-xs max-w-3xl mx-auto">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-surface-container-highest text-primary">
+<span class="material-symbols-outlined text-[16px]">rocket_launch</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-bold">Future Outlook</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface mt-2">
+          Technology Never Stops Evolving
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          New AI models, applications, and technologies are developing continuously. Understanding what is changing helps students stay curious, make informed decisions, and prepare for higher education and future careers.
+        </p>
+</div>
+<!-- 3 Clear Pillars of Lifelong Literacy -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Pillar 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center font-display text-headline-sm font-bold">
+              01
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Explore What's New</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Discover how AI is developing across robotics, computer vision, space research, and regional language translation for all 22 scheduled Indian languages.
+            </p>
+</div>
+<div class="mt-space-lg flex items-center gap-1.5 text-label-md text-primary font-semibold">
+<span class="material-symbols-outlined text-[18px]">explore</span>
+<span class="">Observe real advancements</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center font-display text-headline-sm font-bold">
+              02
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Understand Before You Use</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Always think critically: What data is this tool collecting? Could this result contain bias or inaccuracies? Who created this algorithm, and how was it tested?
+            </p>
+</div>
+<div class="mt-space-lg flex items-center gap-1.5 text-label-md text-primary font-semibold">
+<span class="material-symbols-outlined text-[18px]">troubleshoot</span>
+<span class="">Develop critical judgment</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center font-display text-headline-sm font-bold">
+              03
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Keep Learning &amp; Building</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Experiment with hands-on coding tools, free open curriculum datasets, and collaborative peer learning circles in your school's computer lab.
+            </p>
+</div>
+<div class="mt-space-lg flex items-center gap-1.5 text-label-md text-primary font-semibold">
+<span class="material-symbols-outlined text-[18px]">auto_stories</span>
+<span class="">Hands-on practice wins</span>
+</div>
+</div>
+</div>
+<!-- Action Footer Banner -->
+<div class="p-space-xl rounded-xl bg-surface-container flex flex-col md:flex-row items-center justify-between gap-space-lg shadow-sm">
+<div class="flex flex-col gap-1 text-center md:text-left">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Ready to start with practical tools?</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+            Access free school worksheets, safe tool sandboxes, and student discussion guides prepared by the AI Mitra team.
+          </p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-space-sm">
+<a class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-on-primary-fixed-variant transition-colors shadow-sm" href="resource.html">
+<span class="">Explore Free Resources</span>
+<span class="material-symbols-outlined text-[18px] ml-1.5">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-surface-container-highest text-primary font-label-md text-label-md font-semibold hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors" href="learn_ai.html">
+<span class="">Go to Learn AI Pathway</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-[#172D26] text-[#E8EAE6] border-t border-[#233F36]"><div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin pt-space-3xl pb-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter lg:gap-space-xl pb-space-2xl border-b border-[#2B493E]"><div class="lg:col-span-4 flex flex-col items-start"><div class="flex items-center gap-space-sm mb-space-md"><div class="w-9 h-9 rounded-lg bg-[#176B50] text-[#FFFFFF] flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">auto_awesome</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-[#FFFFFF] font-bold">AI Mitra</span><span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-wider">Explore AI Together</span></div></div><p class="font-body-sm text-body-sm text-secondary-fixed-dim max-w-sm mb-space-lg leading-relaxed">An Indian student-led civic technology initiative bringing critical, accessible, and rigorous artificial intelligence literacy to curious citizens, researchers, and schools nationwide.</p><div class="flex items-center gap-space-sm"><a aria-label="Curriculum Repository" class="w-9 h-9 rounded-lg border border-[#34584C] flex items-center justify-center text-secondary-fixed hover:bg-[#176B50] hover:text-[#FFFFFF] transition-colors" href="https://github.com" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">code</span></a><a aria-label="Academic Dispatches" class="w-9 h-9 rounded-lg border border-[#34584C] flex items-center justify-center text-secondary-fixed hover:bg-[#176B50] hover:text-[#FFFFFF] transition-colors" href="resource.html"><span class="material-symbols-outlined text-[18px]">rss_feed</span></a><a aria-label="Community Exchange" class="w-9 h-9 rounded-lg border border-[#34584C] flex items-center justify-center text-secondary-fixed hover:bg-[#176B50] hover:text-[#FFFFFF] transition-colors" href="about.html"><span class="material-symbols-outlined text-[18px]">forum</span></a><a aria-label="Institutional Enquiries" class="w-9 h-9 rounded-lg border border-[#34584C] flex items-center justify-center text-secondary-fixed hover:bg-[#176B50] hover:text-[#FFFFFF] transition-colors" href="mailto:contact@aimitra.org"><span class="material-symbols-outlined text-[18px]">mail</span></a></div></div><div class="lg:col-span-3 flex flex-col"><span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider mb-space-md font-semibold">Learning Pathways</span><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm"><li class="border-b border-[#233F36] pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors flex items-center justify-between" href="learn_ai.html"><span class="">Foundational Machine Learning</span><span class="font-label-sm text-[11px] text-secondary-fixed-dim">01</span></a></li><li class="border-b border-[#233F36] pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors flex items-center justify-between" href="learn_ai.html"><span class="">Neural Networks Demystified</span><span class="font-label-sm text-[11px] text-secondary-fixed-dim">02</span></a></li><li class="border-b border-[#233F36] pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors flex items-center justify-between" href="learn_ai.html"><span class="">Large Language Models &amp; India</span><span class="font-label-sm text-[11px] text-secondary-fixed-dim">03</span></a></li><li class="border-b border-[#233F36] pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors flex items-center justify-between" href="learn_ai.html"><span class="">Algorithmic Fairness Lab</span><span class="font-label-sm text-[11px] text-secondary-fixed-dim">04</span></a></li></ul></div><div class="lg:col-span-3 flex flex-col"><span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider mb-space-md font-semibold">Civic Initiatives</span><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm"><li class="border-b border-[#233F36] pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors flex items-center justify-between" href="ai_in_real_life.html"><span class="">Agriculture &amp; Rural Deployment</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span></a></li><li class="border-b border-[#233F36] pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors flex items-center justify-between" href="ai_in_real_life.html"><span class="">Healthcare Diagnostic Case Studies</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span></a></li><li class="border-b border-[#233F36] pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors flex items-center justify-between" href="#cybersecurity-safety"><span class="">Ethics, Bias &amp; Public Governance</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span></a></li><li class="border-b border-[#233F36] pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors flex items-center justify-between" href="resource.html"><span class="">Open Curriculum Repository</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span></a></li></ul></div><div class="lg:col-span-2 flex flex-col"><span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider mb-space-md font-semibold">About Initiative</span><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-secondary-fixed-dim"><li class="pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors" href="about.html">Editorial Charter</a></li><li class="pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors" href="about.html">Student Fellowship</a></li><li class="pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors" href="about.html">Partnering Classrooms</a></li><li class="pb-space-xs"><a class="text-secondary-fixed hover:text-[#FFFFFF] transition-colors" href="about.html">Open Source Code</a></li></ul></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-secondary-fixed-dim"><p class="text-center sm:text-left">© 2025 AI Mitra Initiative. Student-led, non-profit, published under Creative Commons BY-NC 4.0.</p><div class="flex items-center gap-space-lg font-label-sm text-label-sm"><a class="hover:text-[#FFFFFF] transition-colors" href="about.html">Privacy Framework</a><a class="hover:text-[#FFFFFF] transition-colors" href="about.html">Research Ethics</a><a class="hover:text-[#FFFFFF] transition-colors" href="resource.html">Classroom Kit</a></div></div></div></footer>
+<script src="js/site-config.js"></script><script src="js/site-navigation.js"></script></body></html>
